@@ -3,3 +3,49 @@
 @tailwind components;
 
 @tailwind utilities;
+
+html {
+  font-size: 17px;
+  @apply text-navy-500;
+}
+
+h1 {
+  @apply text-5xl font-black;
+}
+
+h2 {
+  @apply text-3xl font-black;
+}
+
+h3 {
+  @apply text-xl font-bold;
+}
+
+h4 {
+  @apply text-lg font-bold;
+}
+
+h5 {
+  @apply font-bold;
+}
+
+.bg-gradient-foxtrot {
+  background: linear-gradient(79.13deg, #f18209 0%, #f19409 101.79%);
+}
+
+.h-1\/2 {
+  min-height: 50%;
+  max-height: 50%;
+}
+
+.w-1\/3vw {
+  width: 30vw;
+}
+
+.bg-orange-fadetoleft {
+  background: linear-gradient(
+    to left,
+    rgba(254, 240, 225, 1) 10%,
+    rgba(254, 240, 225, 0) 100%
+  );
+}
