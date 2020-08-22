@@ -38,14 +38,45 @@ h5 {
   max-height: 50%;
 }
 
-.w-1\/3vw {
-  width: 30vw;
-}
-
 .bg-orange-fadetoleft {
   background: linear-gradient(
     to left,
     rgba(254, 240, 225, 1) 10%,
     rgba(254, 240, 225, 0) 100%
   );
+}
+
+.testimonial-enter {
+  transform: translateX(-125%);
+  opacity: 0;
+  width: 0;
+  max-height: 0 !important;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.testimonial-enter-active,
+.testimonial-enter-done {
+  transition: opacity 0.2s 0.1s, width 0.1s, max-height 0.1s 0.1s,
+    transform 0.2s 0.1s;
+  opacity: 1;
+  overflow: hidden;
+  max-height: 750px;
+  visibility: visible;
+}
+
+.testimonial-exit {
+  opacity: 1;
+  overflow: hidden;
+  max-height: 750px;
+}
+
+.testimonial-exit-active,
+.testimonial-exit-done {
+  transition: opacity 0.3s, transform 0.2s 0.1s, width 0.1s 0.2s,
+    max-height 0.1s 0.15s;
+  transform: translateX(-125%);
+  opacity: 0;
+  width: 0;
+  max-height: 0;
 }

@@ -79,7 +79,7 @@ const Navbar = () => {
               <div
                 className={`${
                   !flyoutOpen
-                    ? `opacity-0 translate-y-1`
+                    ? `opacity-0 translate-y-1 hidden`
                     : `opacity-100 translate-y-0`
                 } absolute -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2 transition ease-in-out duration-150`}
               >

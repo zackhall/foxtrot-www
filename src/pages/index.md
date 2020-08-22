@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+title: Foxtrot Aviation Services
+image: /img/homepage-bg.png
+heading: Experience you can trust
+subheading: Aviation Service and Detailing Experts
 mainpitch:
   title: Why Kaldi
   description: >
@@ -18,39 +18,76 @@ description: >-
   anyone.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/icon_Repair.svg
+      heading: Repair Station
+      linkUrl: /path/tbd
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
-    - image: /img/coffee-gear.png
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam
+        convallis risus sed lacinia.
+    - image: /img/icon_Detail.svg
+      heading: Detailing
+      linkUrl: /path/tbd
       text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
-    - image: /img/tutorials.png
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam
+        convallis risus sed lacinia.
+    - image: '/img/icon_Public Sector.svg'
+      heading: Public Sector
+      linkUrl: /path/tbd
       text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-    - image: /img/meeting-space.png
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam
+        convallis risus sed lacinia.
+    - image: /img/icon_Facility.svg
+      heading: Facility Care
+      linkUrl: /path/tbd
       text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam
+        convallis risus sed lacinia.
+    - image: /img/icon_Antimicrobial.svg
+      heading: Anti-microbial Coatings
+      linkUrl: /path/tbd
+      text: >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam
+        convallis risus sed lacinia.
   heading: What we offer
+  subheading: Our Services
   description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam
+    convallis risus sed lacinia. Donec vel pellentesque ante, nec aliquet est...
+about:
+  blurbs:
+    - icon: /img/icon_Eye.svg
+      heading: Proven Results
+      text: >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam convallis risus sed lacinia.
+    - icon: /img/icon_Man.svg
+      heading: Expert Technicians
+      text: >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam convallis risus sed lacinia.
+    - icon: /img/icon_Lock.svg
+      heading: Completely Insured
+      text: >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam convallis risus sed lacinia.
+  links:
+    - text: About us
+      url: /tbd
+    - text: Contact us
+      url: /tbd
+  heading: You're in good company.
+  subheading: About Us
+  image: /img/homepage-feature-image.png
+gallery:
+  items:
+    - image: /img/gallery-1.png
+      alt: Propeller plane
+    - image: /img/gallery-2.png
+      alt: Plane detailing
+    - image: /img/gallery-3.png
+      alt: Side of jet
+    - image: /img/gallery-4.png
+      alt: Cleaned and detialed jet
+  heading: Work that speaks for itself
+  linkText: See full gallery
+  linkUrl: /path/tbd
 main:
   heading: Great coffee with no compromises
   description: >
@@ -67,4 +104,31 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
+testimonials:
+  - author: Elisabeth Kaurismäki
+    company: Boeing
+    quote: >-
+      The first time I tried Kaldi’s coffee, I couldn’t even believe that was
+      the same thing I’ve been drinking every morning.
+  - author: Philipp Trommler
+    company: Formula 1
+    quote: >-
+      Kaldi is the place to go if you want the best quality coffee. I love their
+      stance on empowering farmers and transparency.
+  - author: Netjet Man
+    company: Netjets
+    quote: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+      elementum condimentum lorem, at eleifend justo scelerisque ac. In
+      vulputate urna nec purus fermentum sollicitudin. Nullam ipsum
+      nibh, dapibus ut laoreet quis, aliquam eget neque. Cras maximus
+      hendrerit turpis in mattis.
+  - author: Zack Hall
+    company: Creative Hall, LLC
+    quote: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+      elementum condimentum lorem, at eleifend justo scelerisque ac. In
+      vulputate urna nec purus fermentum sollicitudin. Nullam ipsum
+      nibh, dapibus ut laoreet quis, aliquam eget neque. Cras maximus
+      hendrerit turpis in mattis.
 ---
