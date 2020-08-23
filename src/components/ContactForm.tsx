@@ -34,79 +34,73 @@ export default class Index extends React.Component {
 
   render() {
     return (
-      <section className='section'>
-        <div className='container'>
-          <div className='content'>
-            <h1>Contact</h1>
-            <form
-              name='contact'
-              method='post'
-              action='/contact/thanks/'
-              data-netlify='true'
-              data-netlify-honeypot='bot-field'
-              onSubmit={this.handleSubmit}
-            >
-              {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-              <input type='hidden' name='form-name' value='contact' />
-              <div hidden>
-                <label>
-                  Don’t fill this out:{' '}
-                  <input name='bot-field' onChange={this.handleChange} />
-                </label>
-              </div>
-              <div className='field'>
-                <label className='label' htmlFor={'name'}>
-                  Your name
-                </label>
-                <div className='control'>
-                  <input
-                    className='input'
-                    type={'text'}
-                    name={'name'}
-                    onChange={this.handleChange}
-                    id={'name'}
-                    required={true}
-                  />
-                </div>
-              </div>
-              <div className='field'>
-                <label className='label' htmlFor={'email'}>
-                  Email
-                </label>
-                <div className='control'>
-                  <input
-                    className='input'
-                    type={'email'}
-                    name={'email'}
-                    onChange={this.handleChange}
-                    id={'email'}
-                    required={true}
-                  />
-                </div>
-              </div>
-              <div className='field'>
-                <label className='label' htmlFor={'message'}>
-                  Message
-                </label>
-                <div className='control'>
-                  <textarea
-                    className='textarea'
-                    name={'message'}
-                    onChange={this.handleChange}
-                    id={'message'}
-                    required={true}
-                  />
-                </div>
-              </div>
-              <div className='field'>
-                <button className='button is-link' type='submit'>
-                  Send
-                </button>
-              </div>
-            </form>
+      <div className={this.props.className}>
+        <form
+          name='contact'
+          method='post'
+          action='/contact/thanks/'
+          data-netlify='true'
+          data-netlify-honeypot='bot-field'
+          onSubmit={this.handleSubmit}
+        >
+          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+          <input type='hidden' name='form-name' value='contact' />
+          <div hidden>
+            <label>
+              Don’t fill this out:{' '}
+              <input name='bot-field' onChange={this.handleChange} />
+            </label>
           </div>
-        </div>
-      </section>
+          <div className='flex my-6'>
+            <div className='mr-6 flex-grow'>
+              <label className='hidden' htmlFor={'name'}>
+                Your name
+              </label>
+              <input
+                className='w-full'
+                type={'text'}
+                name={'name'}
+                onChange={this.handleChange}
+                id={'name'}
+                placeholder='Name'
+                required={true}
+              />
+            </div>
+            <div className='flex-grow'>
+              <label className='hidden' htmlFor={'email'}>
+                Email
+              </label>
+              <input
+                className='w-full'
+                type={'email'}
+                name={'email'}
+                onChange={this.handleChange}
+                id={'email'}
+                placeholder='E-mail'
+                required={true}
+              />
+            </div>
+          </div>
+          <div className='my-6'>
+            <label className='hidden' htmlFor={'message'}>
+              Message
+            </label>
+            <textarea
+              className='w-full'
+              name={'message'}
+              onChange={this.handleChange}
+              id={'message'}
+              placeholder='Message'
+              required={true}
+            />
+          </div>
+          <div>
+            <button className='btn' type='submit'>
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
     )
   }
 }

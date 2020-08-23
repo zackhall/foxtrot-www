@@ -55,7 +55,7 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
   <>
     {/* Banner */}
     <div
-      className='flex bg-cover bg-center p-12 py-24 lg:py-48 xl:py-56 flex justify-center'
+      className='flex bg-cover bg-center p-12 py-24 lg:py-48 xl:py-56 justify-center'
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image

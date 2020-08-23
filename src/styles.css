@@ -4,6 +4,8 @@
 
 @tailwind utilities;
 
+--accent-gradient: linear-gradient(79.13deg, #f18209 0%, #f19409 101.79%);
+
 html {
   font-size: 17px;
   @apply text-navy-500;
@@ -29,8 +31,34 @@ h5 {
   @apply font-bold;
 }
 
+input {
+  @apply block bg-gray-200 rounded px-4 py-2;
+}
+
+textarea {
+  @apply block bg-gray-200 rounded px-4 py-2 h-24;
+}
+
+label {
+  @apply block pt-4 pb-2;
+}
+
+.btn {
+  @apply py-2 px-4 bg-navy-500 text-white text-center;
+  min-width: 8rem;
+}
+
+.btn-light {
+  @apply bg-white text-navy-500;
+}
+
+.btn-accent {
+  @apply text-white;
+  background: var(--accent-gradient);
+}
+
 .bg-gradient-foxtrot {
-  background: linear-gradient(79.13deg, #f18209 0%, #f19409 101.79%);
+  background: var(--accent-gradient);
 }
 
 .h-1\/2 {
@@ -79,4 +107,26 @@ h5 {
   opacity: 0;
   width: 0;
   max-height: 0;
+}
+
+.header {
+  height: 400px;
+}
+
+@screen md {
+  .header {
+    height: 450px;
+  }
+}
+
+@screen lg {
+  .header {
+    height: 500px;
+  }
+}
+
+@screen xl {
+  .header {
+    height: 550px;
+  }
 }
