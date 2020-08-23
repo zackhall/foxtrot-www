@@ -3,9 +3,12 @@ templateKey: service-page
 title: Detailing Services
 image: /img/homepage-bg.png
 serviceIntro:
-  text: User experience design is the process of enhancing user satisfaction with a product by improving the usability, accessibility, and pleasure provided in the interaction with the product.
+  text: User experience design is the process of enhancing user satisfaction with
+    a product by improving the usability, accessibility, and pleasure provided
+    in the interaction with the product.
   actionLabel: Schedule Service
   actionUrl: /path/tbd
+featuredimage: /img/homepage-bg.png
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 
