@@ -4,7 +4,9 @@
 
 @tailwind utilities;
 
---accent-gradient: linear-gradient(79.13deg, #f18209 0%, #f19409 101.79%);
+:root {
+  --accent-gradient: linear-gradient(79.13deg, #f18209 0%, #f19409 101.79%);
+}
 
 html {
   font-size: 17px;
