@@ -81,7 +81,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ data }) => {
           </Helmet>
         }
         title={post.frontmatter.title}
-        image={post.frontmatter.image}
+        image={post.frontmatter.featuredimage}
       />
     </Layout>
   )
@@ -101,7 +101,7 @@ export const pageQuery = graphql`
           actionLabel
           actionUrl
         }
-        image {
+        featuredimage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
