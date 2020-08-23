@@ -2,7 +2,7 @@ import React from 'react'
 import ICON_CHEVRON from '../assets/Icon/Chevron.svg'
 import ICON_CHEVRON_WHITE from '../assets/Icon/Chevron-White.svg'
 
-const Chevron = ({ color, ...props }) => (
+const Chevron = ({ color = 'DEFAULT', ...props }) => (
   <img
     {...props}
     src={

@@ -114,21 +114,37 @@ label {
 .header {
   height: 400px;
 }
-
 @screen md {
   .header {
     height: 450px;
   }
 }
-
 @screen lg {
   .header {
     height: 500px;
   }
 }
-
 @screen xl {
   .header {
     height: 550px;
   }
+}
+
+.header-sm {
+  height: 250px;
+}
+@screen lg {
+  .header-sm {
+    height: 350px;
+  }
+}
+@screen xl {
+  .header-sm {
+    height: 400px;
+  }
+}
+
+.container-sm {
+  width: 100%;
+  max-width: 580px;
 }
