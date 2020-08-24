@@ -10,11 +10,12 @@ const Services: React.FC<{
   subheading: string
   blurbs: Array<{ icon: any; heading: string; text: string }>
   links: Array<{ text: string; url: string }>
-}> = ({ heading, subheading, blurbs, links }) => (
+  image: any
+}> = ({ heading, subheading, blurbs, links, image }) => (
   <div className='bg-orange-200 relative'>
     <div className='container mx-auto flex py-24'>
       <div className='w-1/2 pr-12'>
-        <img src='assets/images/homepage-feature-image.png' />
+        <img src={image.childImageSharp.fluid.src} alt={heading} />
       </div>
       <div className='w-1/2 pl-12'>
         <span className='block uppercase tracking-wider text-gray-500 text-sm font-bold'>
@@ -27,7 +28,7 @@ const Services: React.FC<{
               <img
                 className='flex-shrink-0 w-8 inline-block mr-6 mt-2'
                 src={blurb.icon.publicURL}
-                alt='Eye'
+                alt={blurb.heading}
               />
             </div>
             <div>

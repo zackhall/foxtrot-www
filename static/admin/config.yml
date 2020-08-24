@@ -44,6 +44,10 @@ collections:
     folder: "src/menu"
     create: true
     fields:
+      - label: Type
+        name: type
+        widget: hidden
+        default: menu
       - label: Title
         name: title
         widget: string
@@ -55,11 +59,11 @@ collections:
             name: link
             widget: object
             fields:
-              - label: Text
-                name: text
+              - label: Title
+                name: title
                 widget: string
-              - label: Url
-                name: url
+              - label: Path
+                name: path
                 widget: string
           - label: Dropdown
             name: dropdown
@@ -69,7 +73,7 @@ collections:
                 name: title
                 widget: string
               - label: "Dropdown Item"
-                name: dropdownItem
+                name: dropdownItems
                 widget: list
                 fields:
                   - label: Icon
@@ -81,8 +85,8 @@ collections:
                   - label: Description
                     name: description
                     widget: string
-                  - label: Url
-                    name: url
+                  - label: Path
+                    name: path
                     widget: string
 
   - name: "pages"
@@ -101,7 +105,7 @@ collections:
           - {label: Description, name: description, widget: string}
           - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
-          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}, {label: Company, name: company, widget: string}]}
+          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}, {label: Company, name: company, widget: string}, {label: Avatar, name: avatar, widget: image}]}
           - {label: "Gallery Preview", name: galleryPreview, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: "Link Text", name: linkText, widget: string}, {label: "Link URL", name: linkUrl, widget: string}, {label: Items, name: items, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
 
       - file: "src/pages/about/index.md"

@@ -26,6 +26,7 @@ interface IndexPageTemplateProps {
     subheading: string
     links: Array<any>
     blurbs: Array<any>
+    image: any
   }
   gallery: {
     items: Array<any>
@@ -133,6 +134,7 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
       subheading={about.subheading}
       links={about.links}
       blurbs={about.blurbs}
+      image={about.image}
     />
 
     <LargeGallery
@@ -249,6 +251,13 @@ export const pageQuery = graphql`
           }
           heading
           subheading
+          image {
+            childImageSharp {
+              fluid(maxWidth: 650, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         galleryPreview {
           items {
