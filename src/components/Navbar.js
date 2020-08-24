@@ -250,13 +250,13 @@ const Navbar = () => {
             </a>
             <a
               href='#'
-              className='text-base font-bold tracking-wider uppercase leading-6 font-medium text-blue-900 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150'
+              className='text-base font-bold tracking-wider uppercase leading-6 text-blue-900 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150'
             >
               Contact
             </a>
             <a
               href='#'
-              className='text-base font-bold tracking-wider uppercase leading-6 font-medium text-blue-900 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150'
+              className='text-base font-bold tracking-wider uppercase leading-6 text-blue-900 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150'
             >
               Safety
             </a>
@@ -265,7 +265,7 @@ const Navbar = () => {
             <span className='inline-flex rounded-md shadow-sm'>
               <a
                 href='#'
-                className='font-bold tracking-wider uppercase whitespace-no-wrap inline-flex space-x-3 justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gradient-foxtrot focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition ease-in-out duration-150'
+                className='font-bold tracking-wider uppercase whitespace-no-wrap inline-flex space-x-3 justify-center px-4 py-2 border border-transparent text-base leading-6 rounded-md text-white bg-gradient-foxtrot focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition ease-in-out duration-150'
               >
                 <svg
                   className='flex-shrink-0 h-6 w-6 text-gray-400'

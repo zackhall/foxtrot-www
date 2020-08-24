@@ -39,6 +39,52 @@ collections:
       - {label: "Service Intro", name: "serviceIntro", widget: "object", fields: [{label: "Text", name: "text", widget: "text"}, {label: "Action Label", name: "actionLabel", widget: "string"}, {label: "Action URL", name: "actionUrl", widget: "string"}]}
       - {label: "Body", name: "body", widget: "markdown"}
 
+  - name: "menu"
+    label: "Menu"
+    folder: "src/menu"
+    create: true
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: "Menu Items"
+        name: menuItems
+        widget: list
+        types:
+          - label: Link
+            name: link
+            widget: object
+            fields:
+              - label: Text
+                name: text
+                widget: string
+              - label: Url
+                name: url
+                widget: string
+          - label: Dropdown
+            name: dropdown
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: "Dropdown Item"
+                name: dropdownItem
+                widget: list
+                fields:
+                  - label: Icon
+                    name: icon
+                    widget: image
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Description
+                    name: description
+                    widget: string
+                  - label: Url
+                    name: url
+                    widget: string
+
   - name: "pages"
     label: "Pages"
     files:
