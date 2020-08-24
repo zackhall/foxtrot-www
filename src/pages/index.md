@@ -69,9 +69,9 @@ about:
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam convallis risus sed lacinia.
   links:
     - text: About us
-      url: /tbd
+      url: about
     - text: Contact us
-      url: /tbd
+      url: contact
   heading: You're in good company.
   subheading: About Us
   image: /img/homepage-feature-image.png
@@ -87,7 +87,7 @@ galleryPreview:
       alt: Cleaned and detialed jet
   heading: Work that speaks for itself
   linkText: See full gallery
-  linkUrl: /path/tbd
+  linkUrl: gallery
 main:
   heading: Great coffee with no compromises
   description: >

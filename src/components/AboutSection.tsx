@@ -41,7 +41,7 @@ const Services: React.FC<{
         <div>
           {links.map((link) => (
             <span className='inline-block mr-6'>
-              <a href={link.url} className='font-black'>
+              <a href={`/${link.url}`} className='font-black'>
                 {link.text}
                 <span className='mx-2 inline'>
                   <Chevron className='flex-shrink-0 inline-block align-middle' />

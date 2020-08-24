@@ -8,6 +8,7 @@ import AboutSection from '../components/AboutSection'
 import LargeGallery from '../components/LargeGallery'
 import TestimonialCarousel from '../components/TestimonialCarousel'
 import Plane from '../components/Icons/Plane'
+import Play from '../components/Icons/Play'
 
 interface IndexPageTemplateProps {
   image: any
@@ -78,11 +79,7 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
           Experience you can trust.
         </h1>
         <div className='flex flex-row justify-center items-center'>
-          <img
-            className='flex-shrink-0 h-8 w-8 lg:h-12 lg:w-12 mx-2'
-            src='assets/Icon/Play.svg'
-            alt='Play'
-          />
+          <Play className='flex-shrink-0 h-8 w-8 lg:h-12 lg:w-12 mx-2' />
           <a className='text-white font-bold h-full mx-2' href='#'>
             See how Foxtrot works
           </a>
@@ -149,7 +146,7 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
       </div>
       <div className='hidden md:block w-1/12'></div>
       <div className='w-full md:w-6/12'>
-        <p className='text-xl' style={{ columns: 2 }}>
+        <p className='text-xl cols-1 lg:cols-2'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum
           condimentum lorem, at eleifend justo scelerisque ac. In vulputate urna
           nec purus fermentum sollicitudin. Nullam ipsum nibh, dapibus ut

@@ -8,7 +8,7 @@ description: >-
   We pride ourselves on the results we achieve for our customers. While in our care, we’ll treat your airplane as we would treat our own.
 actionLink:
   text: Schedule Service
-  url: /path/tbd
+  url: contact
 gallery:
   - image: /img/gallery-1.png
     alt: Propeller plane

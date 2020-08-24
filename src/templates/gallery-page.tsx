@@ -5,7 +5,6 @@ import Image from 'gatsby-image'
 
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-// import Anchor from '../components/Anchor'
 import Gallery from '../components/Gallery'
 
 export interface GalleryPageTemplateProps {
@@ -51,15 +50,13 @@ export const GalleryPageTemplate: React.FC<GalleryPageTemplateProps> = ({
               : featuredimage
           })`,
         }}
-      >
-        <h1 className='text-white text-center'>{title}</h1>
-      </header>
+      ></header>
       <div className='container mx-auto px-4 text-center -mt-12 bg-blue-100 mb-24'>
         <div className='container-sm mx-auto px-4 py-12'>
           <span className='subheading'>{subheading}</span>
-          <h1>{title}</h1>
+          <h1>{heading}</h1>
           <p className='my-4'>{description}</p>
-          <Link to={actionLink.url}>
+          <Link to={`/${actionLink.url}`}>
             <button className='btn btn-accent'>{actionLink.text}</button>
           </Link>
         </div>

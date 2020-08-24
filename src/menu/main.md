@@ -35,8 +35,8 @@ menuItems:
     path: contact
   - type: link
     title: About
-    path: about
+    path: page/about
   - type: link
     title: Safety
-    path: safety
+    path: page/safety
 ---

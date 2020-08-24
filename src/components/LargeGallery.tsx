@@ -3,8 +3,7 @@ import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 
 import Chevron from '../components/Chevron'
-
-import IMAGE_ICON from '../assets/Icon/Image.svg'
+import ImageIcon from '../components/Icons/Image'
 
 interface LargeGalleryProps {
   items: Array<{
@@ -78,19 +77,17 @@ const LargeGallery: React.FC<LargeGalleryProps> = ({
           transform: 'translate3d(-50%, 50%, 0)',
         }}
       >
-        <img
-          src={IMAGE_ICON}
+        <ImageIcon
           className='absolute'
           style={{
             top: 0,
             left: '50%',
             transform: 'translate3d(-50%, -50%, 0)',
           }}
-          alt=''
         />
         <h4 className='pt-8 pb-4 text-2xl font-bold'>{heading}</h4>
         <span className='pb-2 block'>
-          <Link to={linkUrl}>
+          <Link to={`/${linkUrl}`}>
             {linkText}
             <span className='mx-2 inline'>
               <Chevron
