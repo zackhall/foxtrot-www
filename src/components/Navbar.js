@@ -186,8 +186,8 @@ const Navbar = ({ data }) => {
           </nav>
           <div className='hidden xl:flex items-center justify-end space-x-8 md:flex-1 lg:w-0'>
             <span className='inline-flex rounded-md shadow-sm'>
-              <a
-                href='#'
+              <Link
+                to='/contact'
                 className='font-bold tracking-wider uppercase whitespace-no-wrap inline-flex space-x-3 justify-center px-4 py-2 border border-transparent text-base leading-6 rounded-md text-white bg-gradient-foxtrot focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition ease-in-out duration-150'
               >
                 <svg
@@ -204,7 +204,7 @@ const Navbar = ({ data }) => {
                   />
                 </svg>
                 <span>Schedule Service</span>
-              </a>
+              </Link>
             </span>
           </div>
         </div>

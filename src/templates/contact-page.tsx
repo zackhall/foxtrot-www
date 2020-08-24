@@ -59,7 +59,7 @@ export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = (
         </div>
         <div className='bg-orange-200 h-16'></div>
       </header>
-      <section className='container px-4 py-24 mx-auto grid grid-cols-3 gap-8'>
+      <section className='container px-4 my-24 mx-auto grid grid-cols-3 gap-8'>
         {locations.map((loc) => (
           <div key={loc.title}>
             <h3>{loc.title}</h3>
@@ -74,7 +74,7 @@ export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = (
           </div>
         ))}
       </section>
-      <section className='container px-4 py-24 mx-auto'>
+      <section className='container px-4 my-24 mx-auto'>
         <h2 className='text-center'>{formHeader}</h2>
         <div className='flex py-12'>
           <ContactForm className='w-1/2' />
