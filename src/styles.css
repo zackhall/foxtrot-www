@@ -14,23 +14,23 @@ html {
 }
 
 h1 {
-  @apply text-5xl font-black;
+  @apply text-5xl font-black my-6;
 }
 
 h2 {
-  @apply text-3xl font-black;
+  @apply text-3xl font-black my-4;
 }
 
 h3 {
-  @apply text-xl font-bold;
+  @apply text-xl font-bold my-4;
 }
 
 h4 {
-  @apply text-lg font-bold;
+  @apply text-lg font-bold my-4;
 }
 
 h5 {
-  @apply font-bold;
+  @apply font-bold my-4;
 }
 
 input {
@@ -43,6 +43,18 @@ textarea {
 
 label {
   @apply block pt-4 pb-2;
+}
+
+ul {
+  @apply list-disc ml-5 my-4;
+}
+
+li {
+  @apply my-2;
+}
+
+p {
+  @apply my-4;
 }
 
 .btn {

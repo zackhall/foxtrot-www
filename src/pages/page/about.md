@@ -5,23 +5,30 @@ featuredimage: /img/about-photo.png
 description: About Foxtrot Aviation Services
 ---
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+# The Foxtrot Team
 
-While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+Foxtrot Aviation Services is an aviation detailing business focused on world class results while maintaining our midwestern values. Headquartered in Canton, Ohio we currently have eight locations throughout the state with mobile services available upon request.
 
-## What the updates mean to you
+Our highly trained and insured staff includes over twenty professional and certified detailers who have the experience needed to give you world class results.
 
-The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
+FoxTrot offers services 365 days a year, 24 hours a day, to better serve our clients.  Contact us today to experience the FoxTrot difference!
 
-* producers
-* roasters
-* importers/exporters
-* retailers
-* manufacturers
-* baristas
+## Our Mission
 
-For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.
+To safely and efficiently maintain aircraft and facility appearance, enhance client’s image, and help elevate the passenger experience to the highest possible standard while connecting airport communities through our family values and friendly, professional staff.
 
-Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.
+## Our Values
 
-The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
+__Perseverance.__ FoxTrot is rooted in overxoming obstacles to success, whether they be personal barriers or professional.
+
+__Improvement.__ FoxTrot is committed to finding new ways to complete services more safely and efficiently, resulting in higher quality results at competitive prices.
+
+__Growth.__ FoxTrot is focused on expanding the business by developing a reputation as a world class aviation support services provider.
+
+__Family.__ FoxTrot welcomes all of the aviation community and supports its employees to promote a sustainable, positive culture.
+
+__Passion for Results.__ FoxTrot employees strive to achieve the best customer satisfaction.
+
+__Accountability.__ If there are mistakes, FoxTrot employees own up to any incident and work with the client to resolve the problem and make it a learning ecperience for all parties involved.
+
+__Client Focus.__ FoxTrot caters to every need and want a client might have and develops meaningful and lasting relationships.

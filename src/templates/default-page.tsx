@@ -30,7 +30,7 @@ export const DefaultPageTemplate: React.FC<DefaultPageTemplateProps> = ({
           <img className='w-full' src={image.childImageSharp.fluid.src} />
         </div>
       </header>
-      <section className='container-sm mx-auto px-4 my-24'>
+      <section className='container-sm mx-auto px-4 mt-12 mb-24'>
         <PostContent content={content} />
       </section>
     </>
