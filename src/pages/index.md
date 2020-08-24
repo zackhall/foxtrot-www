@@ -69,7 +69,7 @@ about:
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam convallis risus sed lacinia.
   links:
     - text: About us
-      url: about
+      url: page/about
     - text: Contact us
       url: contact
   heading: You're in good company.
