@@ -75,7 +75,7 @@ about:
   heading: You're in good company.
   subheading: About Us
   image: /img/homepage-feature-image.png
-gallery:
+galleryPreview:
   items:
     - image: /img/gallery-1.png
       alt: Propeller plane

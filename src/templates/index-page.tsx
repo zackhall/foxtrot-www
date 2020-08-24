@@ -189,7 +189,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
         description={frontmatter.description}
         intro={frontmatter.intro}
         about={frontmatter.about}
-        gallery={frontmatter.gallery}
+        gallery={frontmatter.galleryPreview}
         testimonials={frontmatter.testimonials}
       />
     </Layout>
@@ -250,7 +250,7 @@ export const pageQuery = graphql`
           heading
           subheading
         }
-        gallery {
+        galleryPreview {
           items {
             image {
               childImageSharp {
