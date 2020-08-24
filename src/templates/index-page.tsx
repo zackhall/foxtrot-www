@@ -7,6 +7,7 @@ import Services from '../components/Services'
 import AboutSection from '../components/AboutSection'
 import LargeGallery from '../components/LargeGallery'
 import TestimonialCarousel from '../components/TestimonialCarousel'
+import Plane from '../components/Icons/Plane'
 
 interface IndexPageTemplateProps {
   image: any
@@ -99,11 +100,7 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
           transform: 'translate(-50%, -50%)',
         }}
       >
-        <img
-          className='flex-shrink-0 h-full'
-          src='assets/Icon/Plane.svg'
-          alt='Plane'
-        />
+        <Plane className='flex-shrink-0 h-full' />
       </div>
       <div className='container mx-auto py-12 flex justify-center items-center'>
         <span className='block mx-6 uppercase font-bold tracking-wider text-sm'>
