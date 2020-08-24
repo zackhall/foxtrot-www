@@ -14,7 +14,6 @@ const Navbar = ({ data }) => {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   const { menuItems } = data.markdownRemark.frontmatter
-  console.log(menuItems)
 
   const renderMenuItem = ({ type, title, path, dropdownItems }) => {
     switch (type.toUpperCase()) {
@@ -65,7 +64,7 @@ const Navbar = ({ data }) => {
                     {dropdownItems.map(({ title, description, path, icon }) => (
                       <Link
                         to={`/${path}`}
-                        className='-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150'
+                        className='-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150'
                       >
                         <img
                           className='flex-shrink-0 h-6 w-6'
@@ -73,10 +72,10 @@ const Navbar = ({ data }) => {
                           alt='{title}'
                         />
                         <div className='space-y-1'>
-                          <p className='text-base leading-6 font-medium text-gray-900'>
+                          <p className='text-base leading-6 font-medium text-gray-900 my-0'>
                             {title}
                           </p>
-                          <p className='text-sm leading-5 text-gray-500'>
+                          <p className='text-sm leading-5 text-gray-500 my-0'>
                             {description}
                           </p>
                         </div>
