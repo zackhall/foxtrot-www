@@ -110,11 +110,13 @@ testimonials:
     quote: >-
       The first time I tried Kaldi’s coffee, I couldn’t even believe that was
       the same thing I’ve been drinking every morning.
+    avatar: /img/icon_Avatar.png
   - author: Philipp Trommler
     company: Formula 1
     quote: >-
       Kaldi is the place to go if you want the best quality coffee. I love their
       stance on empowering farmers and transparency.
+    avatar: /img/icon_Avatar.png
   - author: Netjet Man
     company: Netjets
     quote: >-
@@ -123,6 +125,7 @@ testimonials:
       vulputate urna nec purus fermentum sollicitudin. Nullam ipsum
       nibh, dapibus ut laoreet quis, aliquam eget neque. Cras maximus
       hendrerit turpis in mattis.
+    avatar: /img/icon_Avatar.png
   - author: Zack Hall
     company: Creative Hall, LLC
     quote: >-
@@ -131,4 +134,12 @@ testimonials:
       vulputate urna nec purus fermentum sollicitudin. Nullam ipsum
       nibh, dapibus ut laoreet quis, aliquam eget neque. Cras maximus
       hendrerit turpis in mattis.
+    avatar: /img/icon_Avatar.png
+brands:
+  - image: /img/logo_NATA.png
+    alt: NATA
+  - image: /img/logo_NBAA.png
+    alt: NBAA
+  - image: /img/logo_RBAA.png
+    alt: RBAA
 ---

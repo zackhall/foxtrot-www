@@ -8,6 +8,7 @@ interface TestimonialsProps {
     author: string
     company: string
     quote: string
+    avatar: any
   }>
 }
 
@@ -29,7 +30,11 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
         >
           <p className='text-xl'>{t.quote}</p>
           <div className='flex my-6'>
-            <img src='/assets/Icon/Avatar.svg' alt='Avatar' className='mr-6' />
+            <img
+              src={t.avatar.childImageSharp.fluid.src}
+              alt={t.author}
+              className='mr-6'
+            />
             <div>
               <span className='block font-bold'>{t.author}</span>
               <span className='block text-sm'>{t.company}</span>

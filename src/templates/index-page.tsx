@@ -38,6 +38,11 @@ interface IndexPageTemplateProps {
     author: string
     company: string
     quote: string
+    avatar: any
+  }>
+  brands: Array<{
+    image: any
+    alt: string
   }>
 }
 
@@ -52,6 +57,7 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
   about,
   gallery,
   testimonials,
+  brands,
 }) => (
   <>
     {/* Banner */}
@@ -103,21 +109,13 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
         <span className='block mx-6 uppercase font-bold tracking-wider text-sm'>
           Trusted in the industry
         </span>
-        <img
-          className='flex-shrink-0 h-8 lg:h-12 mx-6'
-          src='assets/Logos/NATA.png'
-          alt='NATA'
-        />
-        <img
-          className='flex-shrink-0 h-8 lg:h-12 mx-6'
-          src='assets/Logos/NBAA.png'
-          alt='NBAA'
-        />
-        <img
-          className='flex-shrink-0 h-8 lg:h-12 mx-6'
-          src='assets/Logos/RBAA.png'
-          alt='RBAA'
-        />
+        {brands.map((brand) => (
+          <img
+            className='flex-shrink-0 h-8 lg:h-12 mx-6'
+            src={brand.image.childImageSharp.fluid.src}
+            alt={brand.alt}
+          />
+        ))}
       </div>
     </div>
     {/* End Brand Stripe */}
@@ -193,6 +191,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
         about={frontmatter.about}
         gallery={frontmatter.galleryPreview}
         testimonials={frontmatter.testimonials}
+        brands={frontmatter.brands}
       />
     </Layout>
   )
@@ -278,6 +277,23 @@ export const pageQuery = graphql`
           author
           company
           quote
+          avatar {
+            childImageSharp {
+              fluid(maxWidth: 50, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        brands {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 250, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          alt
         }
       }
     }
