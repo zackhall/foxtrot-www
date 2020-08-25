@@ -25,7 +25,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
         key={t.author}
       >
         <li
-          className='testimonial block w-2/5 flex-none mr-6'
+          className='testimonial block w-full md:w-2/3 lg:w-2/5 flex-none px-4 md:px-0 mx-0 md:mx-6'
           style={{ left: 0 }}
         >
           <p className='text-xl'>{t.quote}</p>
@@ -46,7 +46,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
 
   return (
     <section
-      className='bg-orange-200 relative'
+      className='bg-orange-200 relative px-6 py-12'
       aria-labelledby='testimonial-heading'
     >
       <h3 id='testimonial-heading' className='hidden'>
@@ -56,7 +56,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
         onClick={() =>
           setPosition(Math.min(testimonials.length - 1, position + 1))
         }
-        className='absolute disabled:opacity-50 disabled:cursor-not-allowed'
+        className='absolute disabled:opacity-50 disabled:cursor-not-allowed z-10'
         style={{
           right: '5%',
           top: '50%',
@@ -68,7 +68,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
       </button>
       <button
         onClick={() => setPosition(Math.max(0, position - 1))}
-        className='absolute disabled:opacity-50 disabled:cursor-not-allowed'
+        className='absolute disabled:opacity-50 disabled:cursor-not-allowed z-10'
         style={{
           left: '5%',
           top: '50%',
@@ -78,9 +78,8 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
       >
         <ArrowLeft />
       </button>
-      <div className='relative container mx-auto px-6 py-24'>
-        <div className='absolute bg-orange-fadetoleft inset-y-0 right-0 w-1/5'></div>
-        {/* <ul className='flex flex-row overflow-hidden'> */}
+      <div className='relative container mx-auto'>
+        <div className='hidden md:visible absolute bg-orange-fadetoleft inset-y-0 right-0 w-1/5'></div>
         <ul className='flex flex-row overflow-hidden'>
           {renderTestimonials()}
         </ul>

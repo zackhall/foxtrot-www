@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import Img from 'gatsby-image'
 
 import Chevron from '../components/Chevron'
 import ImageIcon from '../components/Icons/Image'

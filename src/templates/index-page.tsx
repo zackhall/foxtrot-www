@@ -1,6 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import { Bounce } from 'react-awesome-reveal'
 
 import Layout from '../components/Layout'
 import Services from '../components/Services'
@@ -71,11 +71,11 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
         })`,
       }}
     >
-      <div className='w-2/3'>
-        <span className='block text-white text-center uppercase min-w-full tracking-wider font-bold text-xs md:text-sm'>
+      <div className='w-3/4 lg:w-2/3'>
+        <span className='block text-white text-center uppercase min-w-full tracking-wider font-bold text-xs md:text-sm my-1'>
           Aviation Service and Detailing Experts
         </span>
-        <h1 className='text-white text-2xl lg:text-4xl xl:text-6xl font-black text-center py-6'>
+        <h1 className='text-white text-2xl lg:text-4xl xl:text-6xl font-black text-center my-6'>
           Experience you can trust.
         </h1>
         <div className='flex flex-row justify-center items-center'>
@@ -91,13 +91,13 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
     {/* Brand Stripe */}
     <div className='bg-orange-200 relative'>
       <div
-        className='absolute bg-orange-200 rounded-full h-12 w-12 flex justify-center items-center p-2'
+        className='absolute bg-orange-200 rounded-full h-24 w-24 flex justify-center items-center p-2'
         style={{
           left: '50%',
           transform: 'translate(-50%, -50%)',
         }}
       >
-        <Plane className='flex-shrink-0 h-full' />
+        <Plane className='flex-shrink-0 h-1/2 animate-bounce' />
       </div>
       <div className='container mx-auto py-12 flex justify-center items-center'>
         <span className='block mx-6 uppercase font-bold tracking-wider text-sm'>

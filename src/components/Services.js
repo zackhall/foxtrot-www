@@ -1,29 +1,36 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Img from 'gatsby-image'
+import { Fade, Slide } from 'react-awesome-reveal'
 
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import ICON_CHEVRON from '../assets/Icon/Chevron.svg'
 
 const Services = ({ heading, subheading, description, gridItems }) => (
   <>
-    <div className='w-1/4 mx-auto text-center my-12'>
+    <div className='w-2/3 md:w-1/2 lg:1/3 xl:w-1/4 mx-auto text-center my-12'>
       <span className='block uppercase tracking-wider text-gray-500 text-sm font-bold'>
         {subheading}
       </span>
       <h2 className='font-black text-4xl mt-2 mb-4'>{heading}</h2>
       <p>{description}</p>
     </div>
-    <div className='container mx-auto flex flex-wrap justify-center'>
-      {gridItems.map((item) => (
-        <div key={item.heading} className='w-1/3 text-center my-6 inline-block'>
-          {item && item.image ? (
-            <img
-              src={item.image.publicURL}
-              alt={item.heading}
-              className='flex-shrink-0 h-12 inline-block my-2'
-            />
-          ) : null}
+    <div className='container mx-auto block md:flex md:flex-wrap justify-center my-12'>
+      {gridItems.map((item, i) => (
+        <div
+          key={item.heading}
+          className='w-2/3 md:w-1/2 lg:w-1/3 text-center my-6 mx-auto md:mx-0 md:px-2'
+        >
+          <Fade triggerOnce>
+            <Slide direction='up' triggerOnce>
+              {item.image ? (
+                <img
+                  src={item.image.publicURL}
+                  alt={item.heading}
+                  className='flex-shrink-0 h-12 inline-block my-2'
+                />
+              ) : null}
+            </Slide>
+          </Fade>
           <h3 className='font-bold text-2xl my-2'>{item.heading}</h3>
           <p className='my-2'>{item.text}</p>
           <span className='block'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Img from 'gatsby-image'
+import { Fade, Slide } from 'react-awesome-reveal'
 
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Chevron from '../components/Chevron'
@@ -13,11 +13,15 @@ const Services: React.FC<{
   image: any
 }> = ({ heading, subheading, blurbs, links, image }) => (
   <div className='bg-orange-200 relative'>
-    <div className='container mx-auto flex py-24'>
-      <div className='w-1/2 pr-12'>
-        <img src={image.childImageSharp.fluid.src} alt={heading} />
+    <div className='container mx-auto px-4 block xl:flex py-12'>
+      <div className='w-full xl:w-1/2 xl:pr-12 my-12 flex justify-center items-center'>
+        <Fade delay={300} duration={700} triggerOnce>
+          <Slide direction='left' triggerOnce>
+            <img src={image.childImageSharp.fluid.src} alt={heading} />
+          </Slide>
+        </Fade>
       </div>
-      <div className='w-1/2 pl-12'>
+      <div className='w-full lg:w-2/3 mx-auto xl:w-1/2 xl:mx-0 xl:pl-12 my-12'>
         <span className='block uppercase tracking-wider text-gray-500 text-sm font-bold'>
           {subheading}
         </span>
@@ -32,7 +36,7 @@ const Services: React.FC<{
               />
             </div>
             <div>
-              <h4 className='text-xl font-bold'>{blurb.heading}</h4>
+              <h4 className='text-xl font-bold my-1'>{blurb.heading}</h4>
               <p>{blurb.text}</p>
             </div>
           </div>
