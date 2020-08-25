@@ -124,16 +124,16 @@ p {
 }
 
 .header {
-  height: 400px;
+  height: 325px;
 }
 @screen md {
   .header {
-    height: 450px;
+    height: 400px;
   }
 }
 @screen lg {
   .header {
-    height: 500px;
+    height: 575px;
   }
 }
 @screen xl {

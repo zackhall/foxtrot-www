@@ -41,9 +41,9 @@ export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = (
   return (
     <>
       <header>
-        <div className='bg-orange-200 h-16'></div>
+        <div className='bg-orange-200 md:h-6 lg:h-16'></div>
         <div
-          className='header bg-contain bg-orange-200 bg-center p-12 bg-no-repeat'
+          className='header bg-contain bg-orange-200 bg-center p-4 md:p-8 lg:p-12 bg-no-repeat'
           style={{
             backgroundImage: `url(${
               image && image.childImageSharp
@@ -52,14 +52,19 @@ export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = (
             })`,
           }}
         >
-          <div className='container px-4 mx-auto flex flex-col justify-end h-full'>
+          <div className='invisible lg:visible container px-4 mx-auto flex flex-col justify-end h-full'>
             <h2 className='md:w-1/2 xl:w-1/4 text-orange-500'>{heading}</h2>
             <p className='md:w-1/2 lg:w-1/4 xl:w-1/5'>{subheading}</p>
           </div>
         </div>
-        <div className='bg-orange-200 h-16'></div>
+        <div className='bg-orange-200 min-h-6 lg:min-h-16'>
+          <div className='lg:invisible w-4/5 mx-auto text-center py-6 px-4'>
+            <h2 className='text-orange-500 m-0'>{heading}</h2>
+            <p className='m-0'>{subheading}</p>
+          </div>
+        </div>
       </header>
-      <section className='container px-4 my-24 mx-auto grid grid-cols-3 gap-8'>
+      <section className='container px-4 my-24 mx-auto grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8'>
         {locations.map((loc) => (
           <div key={loc.title}>
             <h3>{loc.title}</h3>
@@ -76,9 +81,9 @@ export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = (
       </section>
       <section className='container px-4 my-24 mx-auto'>
         <h2 className='text-center'>{formHeader}</h2>
-        <div className='flex py-12'>
-          <ContactForm className='w-1/2' />
-          <div className='w-1/2 px-12'>
+        <div className='flex flex-col lg:flex-row my-6 lg:my-12'>
+          <ContactForm className='lg:w-1/2 my-6' />
+          <div className='lg:w-1/2 px-12 my-6 order-first lg:order-last text-center lg:text-left'>
             <p className='text-xl my-4'>
               <b>E-mail:</b>
               {' ' + email}
