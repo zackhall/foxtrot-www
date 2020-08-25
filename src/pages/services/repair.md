@@ -1,6 +1,6 @@
 ---
 templateKey: service-page
-title: Detailing Services
+title: Repair
 featuredimage: /img/homepage-bg.png
 serviceIntro:
   text: User experience design is the process of enhancing user satisfaction with

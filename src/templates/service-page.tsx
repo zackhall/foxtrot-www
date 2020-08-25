@@ -49,7 +49,7 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
           <Anchor to={`/${intro.actionUrl}`}>{intro.actionLabel}</Anchor>
         </div>
       </section>
-      <section className='container-sm mx-auto px-4 my-24'>
+      <section className='container-sm mx-auto px-4 my-12'>
         <PostContent content={content} />
       </section>
     </>
