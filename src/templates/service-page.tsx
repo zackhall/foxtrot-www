@@ -41,7 +41,7 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
           })`,
         }}
       >
-        <h1 className='text-white text-center'>{title}</h1>
+        <h1 className='px-4 text-white text-center'>{title}</h1>
       </header>
       <section className='bg-orange-200 py-12'>
         <div className='container-sm mx-auto px-4 text-center'>
