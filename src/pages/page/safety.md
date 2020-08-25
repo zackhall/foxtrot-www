@@ -5,23 +5,26 @@ featuredimage: /img/about-photo.png
 description: Description of Foxtrot's safety protocols
 ---
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+# Safety
 
-While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+FoxTrot prides its self on embracing a positive safety culture. Each Flight Department, Facility, or Client embraces safety differently. FoxTrot will work with the Client and comply with all safety regulations of the Client. Furthermore, FoxTrot will work directly with the Client’s safety team to ensure best practices are being followed.
 
-## What the updates mean to you
-
-The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
-
-* producers
-* roasters
-* importers/exporters
-* retailers
-* manufacturers
-* baristas
-
-For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.
-
-Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.
-
-The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
+1. Investment in Team Member Training
+    * On boarding/recurring training
+    * NATA Line Service
+    * Ariel Work Platform (AWP) certification
+    * Fall safe certification
+    * Ladder training
+    * Scaffolding certification
+    * Etc..
+1. Identify and Control Hazards
+    * Watch employees work to spot unsafe work practices
+    * Perform Job Hazard Analysis
+    * Watch employees work to spot unsafe work practices
+    * Perform Job Hazard Analysis
+1. Positive Safety Culture
+    * Non punitive environment
+    * Safety conscious job approach
+    * Tool box talks (safety briefings x2 on a job site)
+1. Peer safety enforcement
+    * Consistent reporting of hazards
