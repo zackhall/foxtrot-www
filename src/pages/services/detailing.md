@@ -1,7 +1,7 @@
 ---
 templateKey: service-page
 title: Detailing Services
-featuredimage: /img/homepage-bg.png
+featuredimage: /img/header_detailing.png
 serviceIntro:
   text: User experience design is the process of enhancing user satisfaction with
     a product by improving the usability, accessibility, and pleasure provided

@@ -25,11 +25,13 @@ export const DefaultPageTemplate: React.FC<DefaultPageTemplateProps> = ({
   return (
     <>
       {helmet || ''}
-      <header className='my-12'>
-        <div className='container mx-auto px-4'>
-          <img className='w-full' src={image.childImageSharp.fluid.src} />
-        </div>
-      </header>
+      {image ? (
+        <header className='my-12'>
+          <div className='container mx-auto px-4'>
+            <img className='w-full' src={image.childImageSharp.fluid.src} />
+          </div>
+        </header>
+      ) : null}
       <section className='container-sm mx-auto px-4 mt-12 mb-24'>
         <PostContent content={content} />
       </section>

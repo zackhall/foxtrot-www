@@ -1,7 +1,7 @@
 ---
 templateKey: service-page
 title: Facility Care
-featuredimage: /img/homepage-bg.png
+featuredimage: /img/header_facility.png
 serviceIntro:
   text: User experience design is the process of enhancing user satisfaction with
     a product by improving the usability, accessibility, and pleasure provided

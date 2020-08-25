@@ -1,7 +1,7 @@
 ---
 templateKey: service-page
 title: Repair
-featuredimage: /img/homepage-bg.png
+featuredimage: /img/header_repair.png
 serviceIntro:
   text: User experience design is the process of enhancing user satisfaction with
     a product by improving the usability, accessibility, and pleasure provided

@@ -1,7 +1,7 @@
 ---
 templateKey: default-page
 title: Safety
-featuredimage: /img/about-photo.png
+featuredimage: /img/safety.jpeg
 description: Description of Foxtrot's safety protocols
 ---
 
