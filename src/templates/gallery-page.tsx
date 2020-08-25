@@ -51,7 +51,7 @@ export const GalleryPageTemplate: React.FC<GalleryPageTemplateProps> = ({
           })`,
         }}
       ></header>
-      <div className='container mx-auto px-4 text-center -mt-12 bg-blue-100 mb-24'>
+      <div className='w-full md:container md:mx-auto px-4 text-center md:-mt-12 bg-blue-100 mb-24'>
         <div className='container-sm mx-auto px-4 py-12'>
           <span className='subheading'>{subheading}</span>
           <h1>{heading}</h1>
