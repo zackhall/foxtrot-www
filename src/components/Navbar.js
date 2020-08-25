@@ -139,7 +139,6 @@ const Navbar = ({ data }) => {
         )
 
       default:
-        console.log(path)
         return (
           <Link
             to={`/${path}`}
@@ -256,8 +255,8 @@ const Navbar = ({ data }) => {
               </div>
               <div>
                 <nav className='grid row-gap-8'>
-                  <a
-                    href='#'
+                  <Link
+                    to='/services/repair'
                     className='-m-3 p-3 flex items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150'
                   >
                     <img
@@ -268,9 +267,9 @@ const Navbar = ({ data }) => {
                     <div className='text-base leading-6 font-medium text-gray-900'>
                       Repair Station
                     </div>
-                  </a>
-                  <a
-                    href='#'
+                  </Link>
+                  <Link
+                    to='/services/detailing'
                     className='-m-3 p-3 flex items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150'
                   >
                     <img
@@ -281,9 +280,9 @@ const Navbar = ({ data }) => {
                     <div className='text-base leading-6 font-medium text-gray-900'>
                       Detailing
                     </div>
-                  </a>
-                  <a
-                    href='#'
+                  </Link>
+                  <Link
+                    to='/services/public-sector'
                     className='-m-3 p-3 flex items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150'
                   >
                     <img
@@ -294,9 +293,9 @@ const Navbar = ({ data }) => {
                     <div className='text-base leading-6 font-medium text-gray-900'>
                       Public Sector
                     </div>
-                  </a>
-                  <a
-                    href='#'
+                  </Link>
+                  <Link
+                    to='/services/facility-care'
                     className='-m-3 p-3 flex items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150'
                   >
                     <img
@@ -307,9 +306,9 @@ const Navbar = ({ data }) => {
                     <div className='text-base leading-6 font-medium text-gray-900'>
                       Facility Care
                     </div>
-                  </a>
-                  <a
-                    href='#'
+                  </Link>
+                  <Link
+                    to='/services/antimicrobial-coatings'
                     className='-m-3 p-3 flex items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150'
                   >
                     <img
@@ -320,45 +319,39 @@ const Navbar = ({ data }) => {
                     <div className='text-base leading-6 font-medium text-gray-900'>
                       Anti-microbial Coatings
                     </div>
-                  </a>
+                  </Link>
                 </nav>
               </div>
             </div>
             <div className='py-6 px-5 space-y-6'>
               <div className='grid grid-cols-2 row-gap-4 col-gap-8'>
-                <a
-                  href='#'
-                  className='text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150'
-                >
-                  Locations
-                </a>
-                <a
-                  href='#'
+                <Link
+                  to='/page/about'
                   className='text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150'
                 >
                   About
-                </a>
-                <a
-                  href='#'
+                </Link>
+                <Link
+                  to='/contact'
                   className='text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150'
                 >
                   Contact
-                </a>
-                <a
-                  href='#'
+                </Link>
+                <Link
+                  to='/page/safety'
                   className='text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150'
                 >
                   Safety
-                </a>
+                </Link>
               </div>
               <div className='space-y-6'>
                 <span className='w-full flex rounded-md shadow-sm'>
-                  <a
-                    href='#'
+                  <Link
+                    to='/contact'
                     className='w-full flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gradient-foxtrot focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition ease-in-out duration-150'
                   >
                     Schedule service
-                  </a>
+                  </Link>
                 </span>
               </div>
             </div>
