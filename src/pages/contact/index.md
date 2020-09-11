@@ -5,8 +5,8 @@ heading: Locations across the country.
 subheading: We have several locations across the country with mobile services available on request.
 image: /img/map.png
 formHeader: Get in touch with us
-email: hello@foxtrotaviation.com
-phone: (330) 704-1517
+email: info@foxtrotaviation.com
+phone: (330) 818-5772
 locations:
   - title: >-
       Headquarters
