@@ -3,29 +3,26 @@ templateKey: service-page
 title: Detailing Services
 featuredimage: /img/header_detailing.png
 serviceIntro:
-  text: User experience design is the process of enhancing user satisfaction with
-    a product by improving the usability, accessibility, and pleasure provided
-    in the interaction with the product.
+  text: >
+    Whether it is brightwork, extensive paint polishing, or routine daily cleanings, FoxTrot can set a new standard of clean for your aircraft.
   actionLabel: Schedule Service
   actionUrl: contact
 ---
 
-Etiam nec fermentum urna. Curabitur sed purus convallis, condimentum lorem vitae, ultrices nibh. Pellentesque turpis libero, commodo at semper ac, mattis eu ante. Nullam rutrum felis efficitur velit pellentesque, non congue leo sodales. Aliquam volutpat lobortis quam, non aliquet augue placerat eget. Aliquam volutpat, lorem eget porta lobortis, leo dui posuere lectus, a tristique mauris neque ac neque. Quisque accumsan nibh et sem gravida maximus. Pellentesque nec mattis sem, non blandit justo. Nullam sodales molestie massa sit amet sollicitudin.
+FoxTrot Aviation Services has its roots in aircraft detailing.  We have come a long way since the founders washed small general aviation aircraft at the Akron Canton airport.  At FoxTrot, we have transformed an art into a science, and the work of a specialist to results that can be consistently repeated for your team.
 
-![flavor wheel](/img/flavor_wheel.jpg)
-
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+We are accomplished in everything from routine post flight cleanings to paint restorations of widebody aircraft.  Most importantly, at FoxTrot, we are never satisfied with the status quo, always seeking out new and better methods to achieve the highest industry quality standard.
 
 ## What you can expect
 
-Nulla facilisi. Vivamus euismod augue sed velit eleifend laoreet. Praesent pellentesque augue ut libero varius, eget efficitur massa gravida.
+Our main goal is to turn a pain point for your operation, cleaning and detailing, into a point of pride.  From our vehicles, to our professional and courteous team members, to our systematic approach to cleaning your aircraft, FoxTrot will ensure your cleaning and detailing problems are solved.
 
-Donec quis dui in turpis mattis convallis et ut tortor.
-* Fusce accumsan sagittis augue.
-* In hac habitasse platea dictumst. Donec luctus lorem felis, sit amet volutpat sapien varius blandit.
-* Mauris iaculis massa libero, eget tempus quam cursus sit amet.
-* Aliquam euismod pellentesque tellus, non consectetur lacus tempor eget.
+For new clients and fleet accounts, we go through several steps to ensure the right solution is applied.
+* Need and scope assessment
+* Program and budget development
+* Staffing with our industry best system for finding leadership
+* Working with your accounting team to ensure FoxTrot is integrated into corporate billing systems
+* Integrating your SMS and procedures with FoxTrot’s
+* Beginning work to the highest standard’s, adapting our template checklists to your unique goals and hotspots
 
-Nulla facilisi. Vivamus euismod augue sed velit eleifend laoreet. Praesent pellentesque augue ut libero varius, eget efficitur massa gravida. Etiam pulvinar turpis quis purus lobortis, sed aliquam est tincidunt. Donec ultrices sodales ipsum quis cursus. Aenean sodales eleifend nunc eget mollis. Aliquam sollicitudin nisl nec facilisis bibendum. Donec ut ex sed ante dictum finibus. Nunc vestibulum aliquet lorem vel tempus. Vivamus sit amet dui nisl. Fusce augue ligula, fringilla in libero sit amet, pretium suscipit libero.
-
-Aliquam massa sem, aliquet ac quam quis, egestas pellentesque enim. Pellentesque vitae arcu placerat, hendrerit sem non, luctus felis. Morbi eu commodo libero. Donec quis sapien ut nunc eleifend feugiat tristique eget libero. Vestibulum sed metus vitae orci interdum consequat. Proin molestie feugiat nunc id vestibulum. Maecenas at neque nec nisi mattis accumsan varius cursus enim. Vivamus sit amet est eget ante aliquet euismod. Aliquam fermentum tortor ornare tortor consectetur, eget interdum lacus dapibus. Sed egestas risus nec dolor pretium, a euismod nisl efficitur. Donec feugiat sollicitudin nisl, a pulvinar ante. Nunc aliquam ipsum vel nisl faucibus molestie. Quisque sed ante neque. Suspendisse at ultrices quam. Ut erat enim, dictum id semper at, elementum vel ex.
+We have the best system in the industry for eliminating the daily hassle of cleaning.  We would love the opportunity to develop a plan for your team today!

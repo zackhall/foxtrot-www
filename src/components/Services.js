@@ -7,7 +7,7 @@ import ICON_CHEVRON from '../assets/Icon/Chevron.svg'
 
 const Services = ({ heading, subheading, description, gridItems }) => (
   <>
-    <div className='w-2/3 md:w-1/2 lg:1/3 xl:w-1/4 mx-auto text-center my-12'>
+    <div className='w-2/3 md:w-1/2 lg:1/3 mx-auto text-center my-12'>
       <span className='block uppercase tracking-wider text-gray-500 text-sm font-bold'>
         {subheading}
       </span>

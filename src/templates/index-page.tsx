@@ -73,7 +73,7 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
     >
       <div className='w-3/4 lg:w-2/3'>
         <span className='block text-white text-center uppercase min-w-full tracking-wider font-bold text-xs md:text-sm my-1'>
-          Aviation Service and Detailing Experts
+          Aviation Service and Refurbishment Experts
         </span>
         <h1 className='text-white text-2xl lg:text-4xl xl:text-6xl font-black text-center my-6'>
           Experience you can trust.
@@ -138,20 +138,17 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
 
     {/* Text well */}
     <div className='container p-6 mx-auto py-24 flex flex-col md:flex-row'>
-      <div className='w-full md:w-5/12 mb-6'>
+      <div className='w-full md:w-7/12 mb-6'>
         <p className='font-black text-4xl leading-tight'>
           Next time you see an orange shirt in the hangar, introduce yourself
           and you’ll see what it means to be a part of the Foxtrot family.
         </p>
       </div>
       <div className='hidden md:block w-1/12'></div>
-      <div className='w-full md:w-6/12'>
-        <p className='text-xl cols-1 lg:cols-2'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum
-          condimentum lorem, at eleifend justo scelerisque ac. In vulputate urna
-          nec purus fermentum sollicitudin. Nullam ipsum nibh, dapibus ut
-          laoreet quis, aliquam eget neque. Cras maximus hendrerit turpis in
-          mattis.
+      <div className='w-full md:w-4/12'>
+        <p className='text-xl cols-1 --lg:cols-2'>
+          If there is a mistake, our team mobilizes to make it right, with early
+          notification, world class event reporting, and constant communication.
         </p>
       </div>
     </div>
