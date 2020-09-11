@@ -1,6 +1,6 @@
 ---
 templateKey: contact-page
-title: Foxtrot Aviation Services
+title: Contact
 heading: Locations across the country.
 subheading: We have several locations across the country with mobile services available on request.
 image: /img/map.png

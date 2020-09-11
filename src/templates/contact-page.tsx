@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
@@ -100,6 +100,10 @@ const ContactPage = ({ data }) => {
 
   return (
     <Layout>
+      <Helmet titleTemplate='%s | Foxtrot Aviation Services'>
+        <title>{`${frontmatter.title}`}</title>
+        <meta name='description' content={`${frontmatter.subheading}`} />
+      </Helmet>
       <ContactPageTemplate
         contentComponent={HTMLContent}
         title={frontmatter.title}
@@ -114,10 +118,6 @@ const ContactPage = ({ data }) => {
       />
     </Layout>
   )
-}
-
-ContactPage.propTypes = {
-  data: PropTypes.object.isRequired,
 }
 
 export default ContactPage
