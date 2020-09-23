@@ -10,6 +10,13 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-postcss`,
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`lato`],
+        display: 'swap',
+      },
+    },
+    {
       resolve: `gatsby-plugin-typescript`,
       options: {
         isTSX: true, // defaults to false
