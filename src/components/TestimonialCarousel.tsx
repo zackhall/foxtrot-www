@@ -12,22 +12,27 @@ interface TestimonialsProps {
   }>
 }
 
+enum DIRECTION {
+  NONE = '',
+  LEFT = 'to-left',
+  RIGHT = 'to-right',
+}
+
 const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
   let [position, setPosition] = useState(0)
+  let [direction, setDirection] = useState(DIRECTION.NONE)
 
   const renderTestimonials = () =>
     testimonials.map((t, index) => (
       <CSSTransition
-        in={index >= position}
+        in={index === position}
         timeout={300}
         classNames='testimonial'
         unmountOnExit={true}
         key={t.author}
       >
-        <li
-          className='testimonial block w-full md:w-2/3 lg:w-2/5 flex-none px-4 md:px-0 mx-0 md:mx-6'
-          style={{ left: 0 }}
-        >
+        <li className='testimonial block w-full md:w-2/3 flex-none mx-auto px-4 md:px-0'>
+          {console.log({ index, position, eq: index === position })}
           <p className='text-xl'>{t.quote}</p>
           <div className='flex my-6'>
             <img
@@ -53,9 +58,10 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
         Testimonials
       </h3>
       <button
-        onClick={() =>
+        onClick={() => {
           setPosition(Math.min(testimonials.length - 1, position + 1))
-        }
+          setDirection(DIRECTION.RIGHT)
+        }}
         className='absolute disabled:opacity-50 disabled:cursor-not-allowed z-10'
         style={{
           right: '5%',
@@ -67,7 +73,10 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
         <ArrowRight />
       </button>
       <button
-        onClick={() => setPosition(Math.max(0, position - 1))}
+        onClick={() => {
+          setPosition(Math.max(0, position - 1))
+          setDirection(DIRECTION.LEFT)
+        }}
         className='absolute disabled:opacity-50 disabled:cursor-not-allowed z-10'
         style={{
           left: '5%',
@@ -80,7 +89,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
       </button>
       <div className='relative container mx-auto'>
         <div className='hidden md:visible absolute bg-orange-fadetoleft inset-y-0 right-0 w-1/5'></div>
-        <ul className='flex flex-row overflow-hidden'>
+        <ul className={`block overflow-hidden min-h-64 ${direction}`}>
           {renderTestimonials()}
         </ul>
       </div>

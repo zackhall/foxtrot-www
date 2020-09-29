@@ -105,6 +105,10 @@ p img {
   visibility: hidden;
 }
 
+.to-right .testimonial-enter {
+  transform: translateX(125%);
+}
+
 .testimonial-enter-active,
 .testimonial-enter-done {
   transition: opacity 0.2s 0.1s, width 0.1s, max-height 0.1s 0.1s,
@@ -129,6 +133,11 @@ p img {
   opacity: 0;
   width: 0;
   max-height: 0;
+}
+
+.to-left .testimonial-exit-active,
+.to-left .testimonial-exit-done {
+  transform: translateX(125%);
 }
 
 .header {

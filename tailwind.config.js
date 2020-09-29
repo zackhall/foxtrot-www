@@ -28,6 +28,14 @@ module.exports = {
         'monospace',
       ],
     },
+    minHeight: {
+      '0': '0',
+      '64': '16rem',
+      '96': '24rem',
+      '128': '32rem',
+      screen: '100vh',
+      full: '100%',
+    },
     extend: {
       // tailwind.config.js
       colors: {
