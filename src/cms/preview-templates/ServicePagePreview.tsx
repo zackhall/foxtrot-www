@@ -1,23 +1,26 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+
+import MdxPreview from './MdxPreview'
 import { ServicePageTemplate } from '../../templates/service-page'
 
-// ProductPagePreview.propTypes = {
-//   entry: PropTypes.shape({
-//     getIn: PropTypes.func,
-//   }),
-//   getAsset: PropTypes.func,
-// }
-
 const ServicePagePreview = ({ entry, getAsset }) => {
-  const entryIntro = entry.getIn(['data', 'intro'])
+  const entryIntro = entry.getIn(['data', 'serviceIntro'])
   const intro = entryIntro ? entryIntro.toJS() : {}
+
+  const body = entry.getIn(['data', 'body'])
+
+  console.log({
+    intro,
+    title: entry.getIn(['data', 'title']),
+    data: entry.getIn(['data']),
+  })
 
   return (
     <ServicePageTemplate
-      image={getAsset(entry.getIn(['data', 'image']))}
+      image={getAsset(entry.getIn(['data', 'featuredimage']))}
       title={entry.getIn(['data', 'title'])}
       intro={intro}
+      children={[<MdxPreview>{body}</MdxPreview>]}
     />
   )
 }
