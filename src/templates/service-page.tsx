@@ -1,13 +1,13 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
+import { MDXProvider } from '@mdx-js/react'
+
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
 import Anchor from '../components/Anchor'
+import { safelyGetFrontMatter } from '../cms/cms.util'
 
 export interface ServicePageTemplateProps {
-  content: React.ReactNode
-  contentComponent: Function
   intro: {
     text: string
     actionLabel: string
@@ -16,29 +16,23 @@ export interface ServicePageTemplateProps {
   title: string
   helmet: any
   image?: any
+  children: any[]
 }
 
 export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
-  content,
-  contentComponent,
   intro,
   title,
   helmet,
   image,
+  children,
 }) => {
-  const PostContent = contentComponent || Content
-
   return (
     <>
       {helmet || ''}
       <header
         className='header-sm flex bg-cover bg-center justify-center items-center'
         style={{
-          backgroundImage: `url(${
-            image && image.childImageSharp
-              ? image.childImageSharp.fluid.src
-              : image
-          })`,
+          backgroundImage: `url(${image})`,
         }}
       >
         <h1 className='px-4 text-white text-center'>{title}</h1>
@@ -50,65 +44,39 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
         </div>
       </section>
       <section className='container-sm mx-auto px-4 my-12'>
-        <PostContent content={content} />
+        <MDXProvider>{children}</MDXProvider>
       </section>
     </>
   )
 }
 
 interface ServicePageProps {
-  data: {
-    markdownRemark: any
-  }
+  pageContext: any
 }
 
-const ServicePage: React.FC<ServicePageProps> = ({ data }) => {
-  const { markdownRemark: post } = data
+const ServicePage: React.FC<ServicePageProps> = (props) => {
+  const { pageContext } = props
+  const frontmatter = safelyGetFrontMatter(pageContext)
 
   return (
     <Layout>
       <ServicePageTemplate
-        content={post.html}
-        contentComponent={HTMLContent}
-        intro={post.frontmatter.serviceIntro}
+        {...props}
+        intro={frontmatter.serviceIntro}
         helmet={
           <Helmet titleTemplate='%s | Foxtrot Aviation Services'>
-            <title>{`${post.frontmatter.title}`}</title>
+            <title>{`${frontmatter.title}`}</title>
             <meta
               name='description'
-              content={`${post.frontmatter.serviceIntro.text}`}
+              content={`${frontmatter.serviceIntro.text}`}
             />
           </Helmet>
         }
-        title={post.frontmatter.title}
-        image={post.frontmatter.featuredimage}
+        title={frontmatter.title}
+        image={frontmatter.featuredimage}
       />
     </Layout>
   )
 }
 
 export default ServicePage
-
-export const pageQuery = graphql`
-  query ServicePageByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      frontmatter {
-        title
-        serviceIntro {
-          text
-          actionLabel
-          actionUrl
-        }
-        featuredimage {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  }
-`

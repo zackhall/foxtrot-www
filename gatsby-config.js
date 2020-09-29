@@ -35,6 +35,20 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        path: `${__dirname}/src/img`,
+        name: 'images',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/assets`,
+        name: 'assets',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         path: `${__dirname}/src/pages`,
         name: 'pages',
       },
@@ -47,17 +61,23 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        path: `${__dirname}/src/img`,
-        name: 'images',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/assets`,
-        name: 'assets',
+        extensions: ['.mdx'],
+        defaultLayouts: {
+          // This entry template will switch the page template based on
+          // a frontmatter value provided in the CMS, allowing users to
+          // choose different template layouts.
+          default: require.resolve(`./src/templates/cms-template.tsx`),
+        },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              name: 'uploads',
+            },
+          },
+        ],
       },
     },
     {
