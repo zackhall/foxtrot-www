@@ -46,6 +46,8 @@ collections:
     folder: "src/pages/page"
     create: true
     slug: "{{slug}}"
+    extension: "mdx"
+    format: "frontmatter"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
       - {label: "Title", name: "title", widget: "string"}

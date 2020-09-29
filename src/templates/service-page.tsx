@@ -1,6 +1,5 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { graphql, Link } from 'gatsby'
 import { MDXProvider } from '@mdx-js/react'
 
 import Layout from '../components/Layout'
@@ -14,7 +13,7 @@ export interface ServicePageTemplateProps {
     actionUrl: string
   }
   title: string
-  helmet: any
+  helmet?: any
   image?: any
   children: any[]
 }
