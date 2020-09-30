@@ -2,7 +2,6 @@ import React from 'react'
 
 import HomePage from './index-page'
 import DefaultPage from './default-page'
-import BlogPost from './blog-post'
 import ContactPage from './contact-page'
 import GalleryPage from './gallery-page'
 import ServicePage from './service-page'
@@ -15,7 +14,6 @@ import { safelyGetFrontMatter } from '../cms/cms.util'
 const componentTemplateMap = {
   'home-page': HomePage,
   'default-page': DefaultPage,
-  'blog-post': BlogPost,
   'contact-page': ContactPage,
   'gallery-page': GalleryPage,
   'service-page': ServicePage,
