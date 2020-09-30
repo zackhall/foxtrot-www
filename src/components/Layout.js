@@ -11,7 +11,7 @@ import FOX from '../assets/Fox.svg'
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
-    <div>
+    <div className='min-h-screen flex flex-col'>
       <Helmet>
         <html lang='en' />
         <title>{title}</title>
@@ -29,7 +29,7 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Navbar />
-      <div>{children}</div>
+      <div className='flex-grow'>{children}</div>
       <Footer />
     </div>
   )
