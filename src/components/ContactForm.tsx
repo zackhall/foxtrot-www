@@ -9,6 +9,12 @@ function encode(data) {
     .join('&')
 }
 
+const Error = ({ name }) => (
+  <span className='text-red-700 text-sm'>
+    <ErrorMessage name={name} />
+  </span>
+)
+
 const schema = Yup.object().shape({
   name: Yup.string()
     .min(2, 'Too short')
@@ -75,8 +81,8 @@ export default ({ className }) => (
           <label htmlFor='name' className='hidden'>
             Name
           </label>
-          <Field name='name' className='w-full' placeholder='Name' />
-          <ErrorMessage name='name' />
+          <Field name='name' className='w-full' placeholder='Name (Required)' />
+          <Error name='name' />
         </div>
       </div>
 
@@ -89,9 +95,9 @@ export default ({ className }) => (
             type='email'
             name='email'
             className='w-full'
-            placeholder='E-mail'
+            placeholder='E-mail (Required)'
           />
-          <ErrorMessage name='email' />
+          <Error name='email' />
         </div>
         <div className='flex-grow ml-3'>
           <label htmlFor='phone' className='hidden'>
@@ -103,7 +109,7 @@ export default ({ className }) => (
             className='w-full'
             placeholder='Phone'
           />
-          <ErrorMessage name='phone' />
+          <Error name='phone' />
         </div>
       </div>
 
@@ -113,14 +119,14 @@ export default ({ className }) => (
             Company
           </label>
           <Field name='company' className='w-full' placeholder='Company' />
-          <ErrorMessage name='company' />
+          <Error name='company' />
         </div>
         <div className='flex-grow ml-3'>
           <label htmlFor='title' className='hidden'>
             Title
           </label>
           <Field name='title' className='w-full' placeholder='Title' />
-          <ErrorMessage name='title' />
+          <Error name='title' />
         </div>
       </div>
 
@@ -134,14 +140,14 @@ export default ({ className }) => (
             className='w-full'
             placeholder='Aircraft Type'
           />
-          <ErrorMessage name='aircraftType' />
+          <Error name='aircraftType' />
         </div>
         <div className='flex-grow ml-3'>
           <label htmlFor='airport' className='hidden'>
             Airport
           </label>
           <Field name='airport' className='w-full' placeholder='Airport' />
-          <ErrorMessage name='airport' />
+          <Error name='airport' />
         </div>
       </div>
 
@@ -153,9 +159,9 @@ export default ({ className }) => (
           name='message'
           component='textarea'
           className='w-full'
-          placeholder='Message'
+          placeholder='Message (Required)'
         />
-        <ErrorMessage name='message' />
+        <Error name='message' />
       </div>
 
       <div className='my-6'>
