@@ -1,12 +1,10 @@
 import React from 'react'
 import MDX from 'mdx-scoped-runtime'
-import { ArrowRight, ArrowLeft } from '../../components/Icons/Arrows'
 
-const shortcodes = {
-  ArrowLeft,
-  ArrowRight,
-}
+import { MDX_COMPONENTS } from '@components/MDXRenderer'
 
-const MdxPreview = ({ children }) => <MDX scope={shortcodes}>{children}</MDX>
+const MdxPreview = ({ children }) => (
+  <MDX scope={MDX_COMPONENTS}>{children}</MDX>
+)
 
 export default MdxPreview

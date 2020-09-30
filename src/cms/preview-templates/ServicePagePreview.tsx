@@ -9,12 +9,6 @@ const ServicePagePreview = ({ entry, getAsset }) => {
 
   const body = entry.getIn(['data', 'body'])
 
-  console.log({
-    intro,
-    title: entry.getIn(['data', 'title']),
-    data: entry.getIn(['data']),
-  })
-
   return (
     <ServicePageTemplate
       image={getAsset(entry.getIn(['data', 'featuredimage']))}

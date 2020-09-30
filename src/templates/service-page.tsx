@@ -1,10 +1,11 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { MDXProvider } from '@mdx-js/react'
 
-import Layout from '../components/Layout'
-import Anchor from '../components/Anchor'
-import { safelyGetFrontMatter } from '../cms/cms.util'
+import MDXRenderer from '@components/MDXRenderer'
+import Layout from '@components/Layout'
+import Anchor from '@components/Anchor'
+import FilmStrip from '@components/FilmStrip'
+import { safelyGetFrontMatter } from '@cms/cms.util'
 
 export interface ServicePageTemplateProps {
   intro: {
@@ -43,7 +44,7 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
         </div>
       </section>
       <section className='container-sm mx-auto px-4 my-12'>
-        <MDXProvider>{children}</MDXProvider>
+        <MDXRenderer>{children}</MDXRenderer>
       </section>
     </>
   )

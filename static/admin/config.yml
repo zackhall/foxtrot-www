@@ -37,7 +37,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "service-page"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Featured Image", name: "v", widget: image}
+      - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Service Intro", name: "serviceIntro", widget: "object", fields: [{label: "Text", name: "text", widget: "text"}, {label: "Action Label", name: "actionLabel", widget: "string"}, {label: "Action URL", name: "actionUrl", widget: "string"}]}
       - {label: "Body", name: "body", widget: "mdx"}
 

@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react",
+    "baseUrl": ".", // this must be specified if "paths" is specified.
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@cms/*": ["src/cms/*"]
+    }
+  }
+}
