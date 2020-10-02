@@ -5,7 +5,9 @@
     "baseUrl": ".", // this must be specified if "paths" is specified.
     "paths": {
       "@components/*": ["src/components/*"],
-      "@cms/*": ["src/cms/*"]
+      "@cms/*": ["src/cms/*"],
+      "@img/*": ["src/img/*"],
+      "@/*": ["src/*"]
     }
   }
 }

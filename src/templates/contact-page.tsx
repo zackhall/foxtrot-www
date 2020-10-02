@@ -1,10 +1,10 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
-import ContactForm from '../components/ContactForm'
-import { formatAsLines } from '../formatting-utils'
+import Layout from '@components/Layout'
+import Content, { HTMLContent } from '@components/Content'
+import ContactForm from '@components/ContactForm'
+import { formatAsLines } from '@/utils'
 
 interface ContactPageTemplateProps {
   title: string

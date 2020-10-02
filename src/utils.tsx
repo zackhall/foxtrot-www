@@ -7,3 +7,5 @@ export const formatAsLines = (text) =>
       <br />
     </span>
   ))
+
+export const createPath = (path) => (path.charAt(0) === '/' ? path : '/' + path)
