@@ -21,7 +21,6 @@ const LargeGallery: React.FC<LargeGalleryProps> = ({
   linkUrl,
 }) => (
   <div className='container p-6 mx-auto my-24 flex' style={{ height: 600 }}>
-    {console.log(items)}
     <div className='hidden lg:flex w-3/12 mr-6 flex-col h-full'>
       <div className='w-full h-1/2 pb-3'>
         <div

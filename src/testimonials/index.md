@@ -1,4 +1,5 @@
 ---
+type: testimonials
 testimonials:
   - author: Elisabeth Kaurismäki
     company: Boeing

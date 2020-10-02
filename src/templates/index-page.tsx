@@ -2,13 +2,13 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { Bounce } from 'react-awesome-reveal'
 
-import Layout from '../components/Layout'
-import Services from '../components/Services'
-import AboutSection from '../components/AboutSection'
-import LargeGallery from '../components/LargeGallery'
-import TestimonialCarousel from '../components/TestimonialCarousel'
-import Plane from '../components/Icons/Plane'
-import Play from '../components/Icons/Play'
+import Layout from '@components/Layout'
+import Services from '@components/Services'
+import AboutSection from '@components/AboutSection'
+import LargeGallery from '@components/LargeGallery'
+import ConnectedCarousel from '@components/testimonial/ConnectedCarousel'
+import Plane from '@components/Icons/Plane'
+import Play from '@components/Icons/Play'
 
 interface IndexPageTemplateProps {
   image: any
@@ -36,16 +36,11 @@ interface IndexPageTemplateProps {
     linkText: string
     linkUrl: string
   }
-  testimonials: Array<{
-    author: string
-    company: string
-    quote: string
-    avatar: any
-  }>
   brands: Array<{
     image: any
     alt: string
   }>
+  testimonialsTag: string
 }
 
 export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
@@ -58,8 +53,8 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
   intro,
   about,
   gallery,
-  testimonials,
   brands,
+  testimonialsTag,
 }) => (
   <>
     {/* Banner */}
@@ -154,7 +149,7 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
     </div>
     {/* End Text well */}
 
-    <TestimonialCarousel testimonials={testimonials} />
+    <ConnectedCarousel tag={testimonialsTag} />
   </>
 )
 
@@ -181,8 +176,8 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
         intro={frontmatter.intro}
         about={frontmatter.about}
         gallery={frontmatter.galleryPreview}
-        testimonials={frontmatter.testimonials}
         brands={frontmatter.brands}
+        testimonialsTag={frontmatter.testimonialsTag}
       />
     </Layout>
   )
@@ -264,18 +259,7 @@ export const pageQuery = graphql`
           linkText
           linkUrl
         }
-        testimonials {
-          author
-          company
-          quote
-          avatar {
-            childImageSharp {
-              fluid(maxWidth: 50, quality: 80) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
+        testimonialsTag
         brands {
           image {
             childImageSharp {
