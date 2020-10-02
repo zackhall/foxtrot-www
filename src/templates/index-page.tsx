@@ -6,7 +6,7 @@ import Layout from '@components/Layout'
 import Services from '@components/Services'
 import AboutSection from '@components/AboutSection'
 import LargeGallery from '@components/LargeGallery'
-import ConnectedCarousel from '@components/testimonial/ConnectedCarousel'
+import Testimonials from '@components/testimonial/ConnectedCarousel'
 import Plane from '@components/Icons/Plane'
 import Play from '@components/Icons/Play'
 
@@ -149,7 +149,7 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
     </div>
     {/* End Text well */}
 
-    <ConnectedCarousel tag={testimonialsTag} />
+    {testimonialsTag ? <Testimonials tag={testimonialsTag} /> : null}
   </>
 )
 

@@ -15,6 +15,7 @@ interface ContactPageTemplateProps {
   phone: string
   email: string
   formHeader: string
+  testimonialsTag: string
   locations: Array<{
     title: string
     address: string
@@ -35,6 +36,7 @@ export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = (
     email,
     formHeader,
     locations,
+    testimonialsTag,
     content,
     contentComponent,
   } = props
@@ -91,7 +93,7 @@ export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = (
         </div>
       </section>
       <PageContent className='content' content={content} />
-      <Testimonials tag='home' />
+      {testimonialsTag ? <Testimonials tag={testimonialsTag} /> : null}
     </>
   )
 }
@@ -116,6 +118,7 @@ const ContactPage = ({ data }) => {
         phone={frontmatter.phone}
         email={frontmatter.email}
         formHeader={frontmatter.formHeader}
+        testimonialsTag={frontmatter.testimonialsTag}
         locations={frontmatter.locations}
       />
     </Layout>
@@ -142,6 +145,7 @@ export const contactPageQuery = graphql`
         phone
         email
         formHeader
+        testimonialsTag
         locations {
           title
           address
