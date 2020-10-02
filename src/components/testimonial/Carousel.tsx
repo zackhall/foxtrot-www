@@ -22,6 +22,7 @@ enum DIRECTION {
 const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
   let [position, setPosition] = useState(0)
   let [direction, setDirection] = useState(DIRECTION.NONE)
+  let length = testimonials.length
 
   const renderTestimonials = () =>
     testimonials.map((t, index) => (
@@ -88,9 +89,23 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
         <ArrowLeft />
       </button>
       <div className='relative container mx-auto'>
-        <div className='hidden md:visible absolute bg-orange-fadetoleft inset-y-0 right-0 w-1/5'></div>
         <ul className={`block overflow-hidden min-h-64 ${direction}`}>
           {renderTestimonials()}
+        </ul>
+        <ul className='flex mx-auto justify-center items-center'>
+          {[...testimonials].map((t, i) => (
+            <li className='block'>
+              <button
+                className={`h-3 w-3 rounded-full inline-block mx-4 focus:outline-none focus:border-orange-600 transition-all ${
+                  i === position ? 'bg-orange-500' : 'bg-orange-500 opacity-50'
+                }`}
+                onClick={() => {
+                  setPosition(i)
+                  setDirection(position > i ? DIRECTION.LEFT : DIRECTION.RIGHT)
+                }}
+              />
+            </li>
+          ))}
         </ul>
       </div>
     </section>
