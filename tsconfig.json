@@ -7,7 +7,7 @@
       "@components/*": ["src/components/*"],
       "@cms/*": ["src/cms/*"],
       "@img/*": ["src/img/*"],
-      "@/*": ["src/*"]
+      "@root/*": ["src/*"]
     }
   }
 }

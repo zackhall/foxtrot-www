@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
 
 import { ArrowLeft, ArrowRight } from '@components/Icons/Arrows'
-import { formatLinesAsP } from '@/utils'
+import { formatLinesAsP } from '@root/utils'
 
 interface TestimonialsProps {
   testimonials: Array<{

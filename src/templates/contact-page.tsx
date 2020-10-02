@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '@components/Layout'
 import Content, { HTMLContent } from '@components/Content'
 import ContactForm from '@components/ContactForm'
-import { formatLinesAsSpan } from '@/utils'
+import { formatLinesAsSpan } from '@root/utils'
 import Testimonials from '@components/testimonial/ConnectedCarousel'
 
 interface ContactPageTemplateProps {
