@@ -56,7 +56,7 @@ const Navbar = ({ data }) => {
                 !flyoutOpen
                   ? `opacity-0 translate-y-1 hidden`
                   : `opacity-100 translate-y-0`
-              } absolute -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2 transition ease-in-out duration-150`}
+              } absolute -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2 transition ease-in-out duration-150 z-50`}
             >
               <div className='rounded-lg shadow-lg'>
                 <div className='rounded-lg shadow-xs overflow-hidden'>
@@ -222,7 +222,7 @@ const Navbar = ({ data }) => {
       <div
         className={`${
           !mobileOpen ? `opacity-0 scale-95 hidden` : `opacity-100 scale-100`
-        } absolute top-0 inset-x-0 p-2 transition ease-in-out  transform origin-top-right md:hidden`}
+        } absolute top-0 inset-x-0 p-2 transition ease-in-out  transform origin-top-right md:hidden z-50`}
       >
         <div className='rounded-lg shadow-lg'>
           <div className='rounded-lg shadow-xs bg-white divide-y-2 divide-gray-50'>
