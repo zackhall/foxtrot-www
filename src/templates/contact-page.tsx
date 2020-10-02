@@ -4,7 +4,8 @@ import { graphql } from 'gatsby'
 import Layout from '@components/Layout'
 import Content, { HTMLContent } from '@components/Content'
 import ContactForm from '@components/ContactForm'
-import { formatAsLines } from '@/utils'
+import { formatLinesAsSpan } from '@/utils'
+import Testimonials from '@components/testimonial/ConnectedCarousel'
 
 interface ContactPageTemplateProps {
   title: string
@@ -68,8 +69,8 @@ export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = (
       <section className='container px-4 my-24 mx-auto grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8'>
         {locations.map((loc) => (
           <div key={loc.title}>
-            <h3>{formatAsLines(loc.title)}</h3>
-            <p>{formatAsLines(loc.address)}</p>
+            <h3>{formatLinesAsSpan(loc.title)}</h3>
+            <p>{formatLinesAsSpan(loc.address)}</p>
           </div>
         ))}
       </section>
@@ -90,6 +91,7 @@ export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = (
         </div>
       </section>
       <PageContent className='content' content={content} />
+      <Testimonials tag='home' />
     </>
   )
 }

@@ -1,41 +1,22 @@
 ---
 type: testimonials
 testimonials:
-  - author: Elisabeth Kaurismäki
-    company: Boeing
+  - author: Corey Head
+    company: President, Sky Quest
     quote: >-
-      The first time I tried Kaldi’s coffee, I couldn’t even believe that was
-      the same thing I’ve been drinking every morning.
+      We have been using FoxTrot for over 5 years and I would highly recommend their services
+      for any of your aircraft detailing needs. FoxTrot's team is an ideal partner for my
+      in-house cleaning staff, they are always prompt, in uniform, and ready to work. Some
+      of our jets have 10+ year old paint and interior, with their help the fleet looks better than ever.
+
+      I look forward to an ongoing relationship with this great company.
     avatar: /img/icon_Avatar.png
     tags:
       - home
-  - author: Philipp Trommler
-    company: Formula 1
+  - author: Keith Waltz
+    company: Stark Airways
     quote: >-
-      Kaldi is the place to go if you want the best quality coffee. I love their
-      stance on empowering farmers and transparency.
-    avatar: /img/icon_Avatar.png
-    tags:
-      - home
-  - author: Netjet Man
-    company: Netjets
-    quote: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-      elementum condimentum lorem, at eleifend justo scelerisque ac. In
-      vulputate urna nec purus fermentum sollicitudin. Nullam ipsum
-      nibh, dapibus ut laoreet quis, aliquam eget neque. Cras maximus
-      hendrerit turpis in mattis.
-    avatar: /img/icon_Avatar.png
-    tags:
-     - home
-  - author: Zack Hall
-    company: Creative Hall, LLC
-    quote: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-      elementum condimentum lorem, at eleifend justo scelerisque ac. In
-      vulputate urna nec purus fermentum sollicitudin. Nullam ipsum
-      nibh, dapibus ut laoreet quis, aliquam eget neque. Cras maximus
-      hendrerit turpis in mattis.
+      In the day to day of managing a Part 135 charter operation, cost and quality results go hand and hand when determining our refurbishment choices.  During our most recent project, recovering the seats simply wasn’t in the budget, so we reached out to FoxTrot to perform a redying for us.  The work was completed on time, affordable, and left a wonderful impression on our owners.  I would recommend their team’s work to anyone.
     avatar: /img/icon_Avatar.png
     tags:
       - home

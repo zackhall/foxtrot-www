@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
 
 import { ArrowLeft, ArrowRight } from '@components/Icons/Arrows'
+import { formatLinesAsP } from '@/utils'
 
 interface TestimonialsProps {
   testimonials: Array<{
@@ -34,7 +35,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
         key={t.author}
       >
         <li className='testimonial block w-full md:w-2/3 flex-none mx-auto px-4 md:px-0'>
-          <p className='text-xl'>{t.quote}</p>
+          <p className='text-xl'>{formatLinesAsP(t.quote)}</p>
           <div className='flex my-6'>
             <img
               src={t.avatar.childImageSharp.fluid.src}
