@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
-import { createPath } from '@/utils'
+import { createPath } from '@root/utils'
 
 import logo from '@img/logo.svg'
 import facebook from '@img/social/facebook.svg'
