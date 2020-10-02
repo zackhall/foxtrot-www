@@ -4,12 +4,14 @@ import { MDXProvider } from '@mdx-js/react'
 import { ArrowLeft, ArrowRight } from '@components/Icons/Arrows'
 import Anchor from '@components/Anchor'
 import FilmStrip from '@components/FilmStrip'
+import Testimonials from '@components/testimonial/ConnectedCarousel'
 
 export const MDX_COMPONENTS = {
   Anchor,
   ArrowLeft,
   ArrowRight,
   FilmStrip,
+  Testimonials,
 }
 
 const MDXRenderer = ({ children }) => (

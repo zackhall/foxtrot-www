@@ -2,8 +2,9 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { MDXProvider } from '@mdx-js/react'
 
-import Layout from '../components/Layout'
-import { safelyGetFrontMatter } from '../cms/cms.util'
+import Layout from '@components/Layout'
+import { safelyGetFrontMatter } from '@cms/cms.util'
+import MDXRenderer from '@components/MDXRenderer'
 
 export interface DefaultPageTemplateProps {
   title: string
@@ -30,7 +31,7 @@ export const DefaultPageTemplate: React.FC<DefaultPageTemplateProps> = ({
         </header>
       ) : null}
       <section className='container-sm mx-auto px-4 mt-12 mb-24'>
-        <MDXProvider>{children}</MDXProvider>
+        <MDXRenderer>{children}</MDXRenderer>
       </section>
     </>
   )

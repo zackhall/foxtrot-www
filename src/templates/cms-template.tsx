@@ -22,7 +22,6 @@ const componentTemplateMap = {
 const CMSTemplate = (props) => {
   const { pageContext } = props
   const { templateKey } = safelyGetFrontMatter(pageContext)
-  console.log({ cmsProps: props, templateKey, fm: props.frontmatter })
   const Page = componentTemplateMap[templateKey]
 
   return <>{Page ? <Page {...props} /> : <DefaultPage {...props} />}</>
