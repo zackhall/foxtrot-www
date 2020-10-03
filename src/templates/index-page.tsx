@@ -94,13 +94,13 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
       >
         <Plane className='flex-shrink-0 h-1/2 animate-bounce' />
       </div>
-      <div className='container mx-auto py-12 flex justify-center items-center'>
+      <div className='container mx-auto py-12 flex justify-center items-center flex-wrap'>
         <span className='block mx-6 uppercase font-bold tracking-wider text-sm'>
           Trusted in the industry
         </span>
         {brands.map((brand) => (
           <img
-            className='flex-shrink-0 h-8 lg:h-12 mx-6'
+            className='flex-shrink-0 h-8 lg:h-12 m-6'
             src={brand.image.childImageSharp.fluid.src}
             alt={brand.alt}
           />
