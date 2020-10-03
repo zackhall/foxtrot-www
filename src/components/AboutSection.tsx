@@ -28,14 +28,14 @@ const Services: React.FC<{
         <h2 className='font-black text-3xl mt-2 mb-4'>{heading}</h2>
         {blurbs.map((blurb) => (
           <div className='flex mb-8'>
-            <div>
+            <div className='flex-shrink-0 w-6 h-6 pt-2'>
               <img
-                className='flex-shrink-0 w-8 inline-block mr-6 mt-2'
+                className='w-full'
                 src={blurb.icon.publicURL}
                 alt={blurb.heading}
               />
             </div>
-            <div>
+            <div className='ml-6'>
               <h4 className='text-xl font-bold my-1'>{blurb.heading}</h4>
               <p>{blurb.text}</p>
             </div>
