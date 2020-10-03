@@ -21,10 +21,6 @@ menuItems:
         title: Facility Care
         description: Manage a small flight department or major FBO network?  FoxTrot can help.  Our world class staff screening procedure guarantees better results.
         path: services/facility-care
-      - icon: /img/icon_Antimicrobial.svg
-        title: Anti-microbial Coatings
-        description: FoxTrot is a leading applicator of Microshield 360, providing one year of protection from pathogens, including COVID-19.  Reach out for details!
-        path: services/antimicrobial-coatings
   - type: link
     title: Contact
     path: contact
