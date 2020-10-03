@@ -73,12 +73,13 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
         <h1 className='text-white text-2xl lg:text-4xl xl:text-6xl font-black text-center my-6'>
           Experience you can trust.
         </h1>
-        <div className='flex flex-row justify-center items-center'>
+        {/* Hide the play button until there is a video */}
+        {/* <div className='flex flex-row justify-center items-center'>
           <Play className='flex-shrink-0 h-8 w-8 lg:h-12 lg:w-12 mx-2' />
           <a className='text-white font-bold h-full mx-2' href='#'>
             See how Foxtrot works
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
     {/* End Banner */}
