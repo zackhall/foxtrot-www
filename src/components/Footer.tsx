@@ -33,17 +33,17 @@ const Footer: React.FC<{}> = () => {
 
   return (
     <footer className='bg-navy-500'>
-      <div className='container p-6 mx-auto flex justify-between text-white'>
-        <span className='block m-2'>
+      <div className='container p-6 mx-auto block md:flex justify-between text-white'>
+        <span className='block m-2 text-center'>
           © 2020 Foxtrot Aviation Services (Repair Station FT2R835D)
         </span>
-        <ul className='block space-x-8 mt-0'>
+        <ul className='block md:space-x-8 mt-0'>
           {menuItems.map((item) => (
-            <li className='inline-block'>
+            <li className='block text-center md:inline-block'>
               <Link to={createPath(item.path)}>{item.title}</Link>
             </li>
           ))}
-          <li className='inline-block space-x-4'>
+          {/* <li className='inline-block space-x-4'>
             <a href=''>
               <img
                 src='assets/Icon/Instagram.svg'
@@ -58,7 +58,7 @@ const Footer: React.FC<{}> = () => {
                 className='inline-block'
               />
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </footer>
