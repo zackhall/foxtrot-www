@@ -1,7 +1,5 @@
 import React from 'react'
-import { Fade, Slide } from 'react-awesome-reveal'
 
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Chevron from '../components/Chevron'
 
 // TODO add feature image
@@ -15,11 +13,7 @@ const Services: React.FC<{
   <div className='bg-orange-200 relative'>
     <div className='container mx-auto px-4 block xl:flex py-12'>
       <div className='w-full xl:w-1/2 xl:pr-12 my-12 flex justify-center items-center'>
-        <Fade delay={300} duration={700} triggerOnce>
-          <Slide direction='left' triggerOnce>
-            <img src={image.childImageSharp.fluid.src} alt={heading} />
-          </Slide>
-        </Fade>
+        <img src={image.childImageSharp.fluid.src} alt={heading} />
       </div>
       <div className='w-full lg:w-2/3 mx-auto xl:w-1/2 xl:mx-0 xl:pl-12 my-12'>
         <span className='block uppercase tracking-wider text-gray-500 text-sm font-bold'>
