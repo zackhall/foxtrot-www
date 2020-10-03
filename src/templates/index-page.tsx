@@ -94,8 +94,11 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
       >
         <Plane className='flex-shrink-0 h-1/2 animate-bounce' />
       </div>
+      <div className='hidden my-6 uppercase font-bold tracking-wider text-sm md:hidden'>
+        Trusted in the industry
+      </div>
       <div className='container mx-auto py-12 flex justify-center items-center flex-wrap'>
-        <span className='block mx-6 uppercase font-bold tracking-wider text-sm'>
+        <span className='block w-full md:w-auto text-center mx-6 uppercase font-bold tracking-wider text-sm'>
           Trusted in the industry
         </span>
         {brands.map((brand) => (
