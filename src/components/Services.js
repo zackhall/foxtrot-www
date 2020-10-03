@@ -1,6 +1,9 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import { Fade, Slide } from 'react-awesome-reveal'
+
+import { createPath } from '@root/utils'
 
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import ICON_CHEVRON from '../assets/Icon/Chevron.svg'
@@ -18,7 +21,7 @@ const Services = ({ heading, subheading, description, gridItems }) => (
       {gridItems.map((item, i) => (
         <div
           key={item.heading}
-          className='w-2/3 md:w-1/2 lg:w-1/3 text-center my-6 mx-auto md:mx-0 md:px-2'
+          className='w-2/3 md:w-1/2 text-center my-6 mx-auto md:mx-0 md:px-2'
         >
           <Fade triggerOnce>
             <Slide direction='up' triggerOnce>
@@ -34,7 +37,7 @@ const Services = ({ heading, subheading, description, gridItems }) => (
           <h3 className='font-bold text-2xl my-2'>{item.heading}</h3>
           <p className='my-2'>{item.text}</p>
           <span className='block'>
-            <a href='' className='font-bold'>
+            <Link to={createPath(item.linkUrl)} className='font-bold'>
               Service details
               <span className='mx-2 inline'>
                 <img
@@ -43,7 +46,7 @@ const Services = ({ heading, subheading, description, gridItems }) => (
                   alt='Chevron'
                 />{' '}
               </span>
-            </a>
+            </Link>
           </span>
         </div>
       ))}

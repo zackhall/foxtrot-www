@@ -20,29 +20,24 @@ intro:
   blurbs:
     - image: /img/icon_Repair.svg
       heading: Repair Station
-      linkUrl: /path/tbd
+      linkUrl: services/repair
       text: >
         Located in Las Vegas, Nevada, our team of experts bring expert craftsmanship, fanatical attention to detail, and fast turn around times to your operation.
     - image: /img/icon_Detail.svg
       heading: Detailing
-      linkUrl: /path/tbd
+      linkUrl: services/detailing
       text: >
         Whether it is brightwork, extensive paint polishing, or routine daily cleanings, FoxTrot can set a new standard of clean for your aircraft.
     - image: '/img/icon_Public Sector.svg'
       heading: Public Sector
-      linkUrl: /path/tbd
+      linkUrl: services/public-sector
       text: >
         Our team’s project management and world class accountability ensures that your contract will be fulfilled exactingly and professionally.
     - image: /img/icon_Facility.svg
       heading: Facility Care
-      linkUrl: /path/tbd
+      linkUrl: services/facility-care
       text: >
         Manage a small flight department or major FBO network?  FoxTrot can help.  Our world class staff screening procedure guarantees better results.
-    - image: /img/icon_Antimicrobial.svg
-      heading: Anti-microbial Coatings
-      linkUrl: /path/tbd
-      text: >
-        FoxTrot is a leading applicator of Microshield 360, providing one year of protection from pathogens, including COVID-19.  Reach out for details!
   heading: What we offer
   subheading: Our Services
   description: >
