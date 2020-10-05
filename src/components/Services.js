@@ -26,11 +26,16 @@ const Services = ({ heading, subheading, description, gridItems }) => (
           <Fade triggerOnce>
             <Slide direction='up' triggerOnce>
               {item.image ? (
-                <img
-                  src={item.image.publicURL}
-                  alt={item.heading}
+                <Link
+                  to={createPath(item.linkUrl)}
                   className='flex-shrink-0 h-12 inline-block my-2'
-                />
+                >
+                  <img
+                    src={item.image.publicURL}
+                    alt={item.heading}
+                    className=''
+                  />
+                </Link>
               ) : null}
             </Slide>
           </Fade>
