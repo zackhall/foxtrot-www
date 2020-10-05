@@ -22,7 +22,7 @@ menuItems:
         description: Manage a small flight department or major FBO network?  FoxTrot can help.  Our world class staff screening procedure guarantees better results.
         path: services/facility-care
   - type: link
-    title: Contact
+    title: Locations & Contact
     path: contact
   - type: link
     title: About
