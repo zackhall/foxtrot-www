@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 :root {
-  --accent-gradient: linear-gradient(79.13deg, #f18209 0%, #f19409 101.79%);
+  --accent-gradient: linear-gradient(79.13deg, #f18209 0%, #f9b32e 101.79%);
 }
 
 html {
@@ -184,7 +184,7 @@ p img {
 
 .container-sm {
   width: 100%;
-  max-width: 580px;
+  max-width: 650px;
 }
 @screen lg {
   .container-sm {
