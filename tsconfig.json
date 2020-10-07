@@ -4,6 +4,7 @@
     "jsx": "react",
     "baseUrl": ".", // this must be specified if "paths" is specified.
     "paths": {
+      "@assets/*": ["src/assets/*"],
       "@components/*": ["src/components/*"],
       "@cms/*": ["src/cms/*"],
       "@img/*": ["src/img/*"],

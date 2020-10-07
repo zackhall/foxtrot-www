@@ -3,6 +3,13 @@ module.exports = {
     title: 'Foxtrot Aviation Services',
     description:
       'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/foxtrotaviationservices/',
+      linkedin:
+        'https://www.linkedin.com/company/foxtrot-aviation-services-llc/',
+      facebook:
+        'https://www.facebook.com/Foxtrot-Aviation-Services-LLC-364482620290021',
+    },
   },
   plugins: [
     'gatsby-plugin-sharp',
