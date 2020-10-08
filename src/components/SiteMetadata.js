@@ -8,6 +8,11 @@ const useSiteMetadata = () => {
           siteMetadata {
             title
             description
+            socialLinks {
+              instagram
+              linkedin
+              facebook
+            }
           }
         }
       }

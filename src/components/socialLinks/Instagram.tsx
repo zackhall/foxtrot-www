@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import { Link } from 'gatsby'
+import useSiteMetadata from '@components/SiteMetadata'
 
 export const Icon = () => (
   <svg
@@ -16,22 +17,11 @@ export const Icon = () => (
 )
 
 export const Instagram: React.FC<{}> = () => {
-  const data = useStaticQuery(graphql`
-    query Instagram {
-      site {
-        siteMetadata {
-          socialLinks {
-            instagram
-          }
-        }
-      }
-    }
-  `)
+  const { socialLinks } = useSiteMetadata()
 
-  const { instagram: linkUrl } = data.site.siteMetadata.socialLinks
-  return (
-    <Link to={linkUrl}>
+  return socialLinks && socialLinks.instagram ? (
+    <Link to={socialLinks.instagram}>
       <Icon />
     </Link>
-  )
+  ) : null
 }
