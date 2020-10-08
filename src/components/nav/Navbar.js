@@ -57,7 +57,7 @@ const Navbar = ({ data }) => {
                 className='font-bold tracking-wider uppercase whitespace-no-wrap inline-flex space-x-3 justify-center px-4 py-2 border border-transparent text-base leading-6 rounded-md text-white bg-gradient-foxtrot focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition ease-in-out duration-150'
               >
                 <svg
-                  className='flex-shrink-0 h-6 w-6 text-gray-400'
+                  className='flex-shrink-0 h-6 w-6 text-white'
                   fill='none'
                   viewBox='0 0 24 24'
                   stroke='currentColor'
