@@ -67,7 +67,7 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
       }}
     >
       <div className='w-3/4 lg:w-2/3'>
-        <span className='block text-white text-center uppercase min-w-full tracking-wider font-bold text-xs md:text-sm my-1'>
+        <span className='block text-white text-center uppercase min-w-full tracking-wider font-extrabold text-s, md:text-base my-1'>
           Aviation Service and Refurbishment Experts
         </span>
         <h1 className='text-white text-2xl lg:text-4xl xl:text-6xl font-black text-center my-6'>
