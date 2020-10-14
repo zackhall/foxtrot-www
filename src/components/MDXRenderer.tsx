@@ -6,6 +6,7 @@ import Anchor from '@components/Anchor'
 import FilmStrip from '@components/FilmStrip'
 import Testimonials from '@components/testimonial/ConnectedCarousel'
 import { FeatureTable, FeatureTableColumn } from '@components/FeatureTable'
+import StyledList from '@components/StyledList'
 
 export const MDX_COMPONENTS = {
   Anchor,
@@ -15,6 +16,7 @@ export const MDX_COMPONENTS = {
   FeatureTableColumn,
   FilmStrip,
   Testimonials,
+  ul: StyledList,
 }
 
 const MDXRenderer = ({ children }) => (
