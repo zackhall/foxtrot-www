@@ -130,7 +130,17 @@ collections:
           - {label: Email, name: email, widget: string}
           - {label: Phone, name: phone, widget: string}
           - {label: Testimonials Tag, name: testimonialsTag, widget: string}
-          - {label: Locations, name: locations, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Address, name: address, widget: text}]}
+          - label: Locations
+            name: locations
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Address
+                name: address
+                widget: markdown
+                minimal: true
 
       - file: "src/pages/gallery.md"
         label: "Gallery Page"
