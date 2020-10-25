@@ -46,12 +46,12 @@ locations:
       *Detailing • Facility Care*
   - title: |-
       Cincinnati
-      (LUK)
+      (LUK, CVG)
     address: |-
       358 Wilmer Ave <br/>
       Cincinnati, OH 45226
 
-      *Detailing • Facility Care*
+      *Detailing • Commercial Cleaning • Facility Care*
   - title: |-
       Nashville
       (BNA, MQY, JWN)
@@ -78,12 +78,6 @@ locations:
 
       *__Repair__ • Detailing • Facility Care*
   - title: Dayton (DAY)
-    address: |-
-      123 Address TBD <br />
-      City, ST 12345
-
-      *Detailing • Commercial Cleaning • Facility Care*
-  - title: Cincinnati (CVG)
     address: |-
       123 Address TBD <br />
       City, ST 12345

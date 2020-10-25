@@ -71,17 +71,7 @@ export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = (
           </div>
         </div>
       </header>
-      <section className='container px-4 my-24 mx-auto'>
-        <h2>Locations</h2>
-        <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8'>
-          {locations.map((loc) => (
-            <div key={loc.title}>
-              <h4>{formatLinesAsSpan(loc.title)}</h4>
-              <MDX>{loc.address}</MDX>
-            </div>
-          ))}
-        </div>
-      </section>
+
       <section className='container px-4 my-24 mx-auto'>
         <h2 className='text-center'>{formHeader}</h2>
         <div className='flex flex-col lg:flex-row my-6 lg:my-12'>
@@ -98,7 +88,21 @@ export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = (
           </div>
         </div>
       </section>
+
+      <section className='container px-4 my-24 mx-auto'>
+        <h2>Locations</h2>
+        <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8'>
+          {locations.map((loc) => (
+            <div key={loc.title}>
+              <h4>{formatLinesAsSpan(loc.title)}</h4>
+              <MDX>{loc.address}</MDX>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <PageContent className='content' content={content} />
+
       {testimonialsTag ? <Testimonials tag={testimonialsTag} /> : null}
     </>
   )
