@@ -14,8 +14,8 @@ locations:
       Headquarters
       (Canton)
     address: |-
-      5440 Fulton Road NW
-      Suite 201
+      5440 Fulton Road NW <br/>
+      Suite 201 <br/>
       Canton, OH 44718
 
       *Detailing • Facility Care*
@@ -23,7 +23,7 @@ locations:
       Cleveland
       (CGF, BKL, CLE, CAK)
     address: |-
-      6200 Riverside Dr.
+      6200 Riverside Dr. <br/>
       Cleveland, Ohio 44135
 
       *Detailing • Facility Care*
@@ -31,8 +31,8 @@ locations:
       Detroit
       (DTW, PTK, DET, YIP, LAN)
     address: |-
-      31705 East Service Drive
-      Building 530
+      31705 East Service Drive <br/>
+      Building 530 <br/>
       Detroit, MI 48242
 
       *Detailing • Facility Care*
@@ -40,7 +40,7 @@ locations:
       Columbus
       (CMH, OSU, LCK, TZR)
     address: |-
-      4130 E 5th Ave
+      4130 E 5th Ave <br/>
       Columbus, OH 43219
 
       *Detailing • Facility Care*
@@ -48,7 +48,7 @@ locations:
       Cincinnati
       (LUK)
     address: |-
-      358 Wilmer Ave
+      358 Wilmer Ave <br/>
       Cincinnati, OH 45226
 
       *Detailing • Facility Care*
@@ -56,7 +56,7 @@ locations:
       Nashville
       (BNA, MQY, JWN)
     address: |-
-      635 Hangar Ln
+      635 Hangar Ln <br/>
       Nashville, TN 37217
 
       *Detailing • Facility Care*
@@ -64,7 +64,7 @@ locations:
       Long Island
       (ISP, FRG)
     address: |-
-      2221 Smithtown Ave
+      2221 Smithtown Ave <br/>
       Ronkonkoma, NY 11779
 
       *Detailing • Facility Care*
@@ -72,56 +72,49 @@ locations:
       Las Vegas *
       (LAS, HND)
     address: |-
-      2900 East Patrick Lane
-      Suite 5A
+      2900 East Patrick Lane <br/>
+      Suite 5A <br/>
       Las Vegas, Nevada 89120
 
-      ***Repair** • Detailing • Facility Care*
+      *__Repair__ • Detailing • Facility Care*
   - title: Dayton (DAY)
     address: |-
-      123 Address TBD
-
+      123 Address TBD <br />
       City, ST 12345
 
       *Detailing • Commercial Cleaning • Facility Care*
   - title: Cincinnati (CVG)
     address: |-
-      123 Address TBD
-
+      123 Address TBD <br />
       City, ST 12345
 
       *Detailing • Commercial Cleaning • Facility Care*
   - address: |-
-      123 Address TBD
-
+      123 Address TBD <br />
       City, ST 12345
 
       *Detailing • Commercial Cleaning • Facility Care*
     title: Norfolk (ORF)
   - address: |-
-      123 Address TBD
-
+      123 Address TBD <br />
       City, ST 12345
 
       *Detailing • Commercial Cleaning • Facility Care*
     title: Greenville (GSP)
   - address: |-
-      123 Address TBD
-
+      123 Address TBD <br />
       City, ST 12345
 
       *Detailing • Commercial Cleaning • Facility Care*
     title: Charlotte (CLT)
   - address: |-
-      123 Address TBD
-
+      123 Address TBD <br />
       City, ST 12345
 
       *Detailing • Commercial Cleaning • Facility Care*
     title: Savannah (SAV)
   - address: |-
-      123 Address TBD
-
+      123 Address TBD <br />
       City, ST 12345
 
       *Detailing • Commercial Cleaning • Facility Care*

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Anchor from '@components/Anchor'
+import { createPath } from '@root/utils'
 
 export interface FilmStripProps {
   photos: Array<{
@@ -30,7 +31,7 @@ const FilmStrip: React.FC<FilmStripProps> = ({ photos, link }) => {
       </div>
       {link && link.text && link.path ? (
         <div className='text-right mt-8'>
-          <Anchor to={`/${link.path}`}>{link.text}</Anchor>
+          <Anchor to={createPath(link.path)}>{link.text}</Anchor>
         </div>
       ) : null}
     </div>

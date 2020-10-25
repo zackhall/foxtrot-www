@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet'
 import MDXRenderer from '@components/MDXRenderer'
 import Layout from '@components/Layout'
 import Anchor from '@components/Anchor'
-import FilmStrip from '@components/FilmStrip'
 import { safelyGetFrontMatter } from '@cms/cms.util'
 
 export interface ServicePageTemplateProps {
@@ -57,6 +56,7 @@ interface ServicePageProps {
 const ServicePage: React.FC<ServicePageProps> = (props) => {
   const { pageContext } = props
   const frontmatter = safelyGetFrontMatter(pageContext)
+  console.log({ props, pageContext })
 
   return (
     <Layout>

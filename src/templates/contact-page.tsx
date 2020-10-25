@@ -1,6 +1,9 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
+import { MDXProvider } from '@mdx-js/react'
+import MDX from 'mdx-scoped-runtime'
+
 import Layout from '@components/Layout'
 import Content, { HTMLContent } from '@components/Content'
 import ContactForm from '@components/ContactForm'
@@ -68,13 +71,17 @@ export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = (
           </div>
         </div>
       </header>
-      <section className='container px-4 my-24 mx-auto grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8'>
-        {locations.map((loc) => (
-          <div key={loc.title}>
-            <h3>{formatLinesAsSpan(loc.title)}</h3>
-            <p>{formatLinesAsSpan(loc.address)}</p>
-          </div>
-        ))}
+      <section className='container px-4 my-24 mx-auto'>
+        <h2>Locations</h2>
+        <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8'>
+          {locations.map((loc) => (
+            <div key={loc.title}>
+              <h4>{formatLinesAsSpan(loc.title)}</h4>
+              {console.log(loc.address)}
+              <MDX>{loc.address}</MDX>
+            </div>
+          ))}
+        </div>
       </section>
       <section className='container px-4 my-24 mx-auto'>
         <h2 className='text-center'>{formHeader}</h2>
