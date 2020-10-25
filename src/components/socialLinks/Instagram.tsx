@@ -20,8 +20,8 @@ export const Instagram: React.FC<{}> = () => {
   const { socialLinks } = useSiteMetadata()
 
   return socialLinks && socialLinks.instagram ? (
-    <Link to={socialLinks.instagram}>
+    <a href={socialLinks.instagram}>
       <Icon />
-    </Link>
+    </a>
   ) : null
 }

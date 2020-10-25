@@ -77,7 +77,6 @@ export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = (
           {locations.map((loc) => (
             <div key={loc.title}>
               <h4>{formatLinesAsSpan(loc.title)}</h4>
-              {console.log(loc.address)}
               <MDX>{loc.address}</MDX>
             </div>
           ))}

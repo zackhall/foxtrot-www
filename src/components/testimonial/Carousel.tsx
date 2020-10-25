@@ -35,7 +35,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
         key={t.author}
       >
         <li className='testimonial block w-full md:w-2/3 flex-none mx-auto px-4 md:px-0'>
-          <p className='text-xl'>{formatLinesAsP(t.quote)}</p>
+          <div className='text-xl'>{formatLinesAsP(t.quote)}</div>
           <div className='flex my-6'>
             <img
               src={t.avatar.childImageSharp.fluid.src}
@@ -95,7 +95,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
         </ul>
         <ul className='flex mx-auto justify-center items-center'>
           {[...testimonials].map((t, i) => (
-            <li className='block'>
+            <li className='block' key={t.author}>
               <button
                 className={`h-3 w-3 rounded-full inline-block mx-4 focus:outline-none focus:border-orange-600 transition-all ${
                   i === position ? 'bg-orange-500' : 'bg-orange-500 opacity-50'

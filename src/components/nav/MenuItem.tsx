@@ -39,9 +39,9 @@ const MenuItem: React.FC<MenuItemProps> = ({
               fill='currentColor'
             >
               <path
-                fill-rule='evenodd'
+                fillRule='evenodd'
                 d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'
-                clip-rule='evenodd'
+                clipRule='evenodd'
               />
             </svg>
           </button>
@@ -58,6 +58,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
                 <div className='z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8'>
                   {dropdownItems.map(({ title, description, path, icon }) => (
                     <Link
+                      key={path}
                       to={createPath(path)}
                       className='-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150'
                     >
@@ -79,8 +80,8 @@ const MenuItem: React.FC<MenuItemProps> = ({
                 </div>
                 <div className='px-5 py-5 bg-gray-100 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 flex justify-around'>
                   <div>
-                    <a
-                      href='#'
+                    <Link
+                      to='/contact'
                       className='-m-3 p-3 flex items-center space-x-3 rounded-md text-base leading-6 font-medium text-gray-900 hover:bg-gray-100 transition ease-in-out duration-150'
                     >
                       <svg
@@ -90,14 +91,14 @@ const MenuItem: React.FC<MenuItemProps> = ({
                         stroke='currentColor'
                       >
                         <path
-                          stroke-linecap='round'
-                          stroke-linejoin='round'
-                          stroke-width='2'
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth='2'
                           d='M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z'
                         />
                       </svg>
-                      <Link to='/contact'>Contact Sales</Link>
-                    </a>
+                      <span>Contact Sales</span>
+                    </Link>
                   </div>
                 </div>
               </div>

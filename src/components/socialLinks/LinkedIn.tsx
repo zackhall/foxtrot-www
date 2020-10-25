@@ -19,8 +19,8 @@ export const LinkedIn: React.FC<{}> = () => {
   const { socialLinks } = useSiteMetadata()
 
   return socialLinks && socialLinks.linkedin ? (
-    <Link to={socialLinks.linkedin}>
+    <a href={socialLinks.linkedin}>
       <Icon />
-    </Link>
+    </a>
   ) : null
 }

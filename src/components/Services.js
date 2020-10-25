@@ -5,7 +5,6 @@ import { Fade, Slide } from 'react-awesome-reveal'
 
 import { createPath } from '@root/utils'
 
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import ICON_CHEVRON from '../assets/Icon/Chevron.svg'
 
 const Services = ({ heading, subheading, description, gridItems }) => (

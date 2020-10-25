@@ -32,6 +32,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ isOpen, onClose, items }) => {
 
   const renderFlyoutItem = ({ icon, title, path }) => (
     <Link
+      key={path}
       to={createPath(path)}
       className='-m-3 p-3 flex items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150'
     >
@@ -44,6 +45,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ isOpen, onClose, items }) => {
 
   const renderStandardLinks = ({ title, path }) => (
     <Link
+      key={path}
       to={createPath(path)}
       className='text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150'
     >
@@ -77,9 +79,9 @@ const MobileNav: React.FC<MobileNavProps> = ({ isOpen, onClose, items }) => {
                     stroke='currentColor'
                   >
                     <path
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='2'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='2'
                       d='M6 18L18 6M6 6l12 12'
                     />
                   </svg>

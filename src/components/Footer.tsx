@@ -39,7 +39,7 @@ const Footer: React.FC<{}> = () => {
         </span>
         <ul className='block md:space-x-8 mt-0'>
           {menuItems.map((item) => (
-            <li className='block text-center md:inline-block'>
+            <li key={item.path} className='block text-center md:inline-block'>
               <Link to={createPath(item.path)}>{item.title}</Link>
             </li>
           ))}
