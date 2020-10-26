@@ -8,7 +8,7 @@ import AboutSection from '@components/AboutSection'
 import LargeGallery from '@components/LargeGallery'
 import Testimonials from '@components/testimonial/ConnectedCarousel'
 import Plane from '@components/Icons/Plane'
-import Play from '@components/Icons/Play'
+// import Play from '@components/Icons/Play'
 
 interface IndexPageTemplateProps {
   image: any
