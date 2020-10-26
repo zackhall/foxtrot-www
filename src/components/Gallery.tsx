@@ -46,7 +46,7 @@ const Gallery: React.FC<GalleryProps> = ({ photos }) => {
               views={galleryPhotos.map((x) => ({
                 ...x,
                 source: x.src,
-                caption: x.alt,
+                // caption: x.alt,
               }))}
             />
           </Modal>
