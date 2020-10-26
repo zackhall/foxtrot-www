@@ -18,4 +18,18 @@ gallery:
     alt: Side of jet
   - image: /img/gallery-4.png
     alt: Cleaned and detialed jet
+  - image: /img/gallery-5.jpg
+    alt: TBD
+  - image: /img/gallery-6.jpg
+    alt: TBD
+  - image: /img/gallery-7.jpg
+    alt: TBD
+  - image: /img/gallery-8.jpg
+    alt: TBD
+  - image: /img/gallery-9.jpg
+    alt: TBD
+  - image: /img/gallery-10.jpg
+    alt: TBD
+  - image: /img/gallery-11.jpg
+    alt: TBD
 ---
