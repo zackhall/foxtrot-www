@@ -29,7 +29,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
         <div className='relative'>
           <button
             type='button'
-            className='font-bold tracking-wider uppercase text-blue-900 group inline-flex items-center space-x-2 text-base leading-6 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150'
+            className='font-bold tracking-wider uppercase text-blue-900 group inline-flex items-center space-x-2 text-base leading-6 hover:text-opacity-75 focus:outline-none focus:text-opacity-75 transition ease-in-out duration-150'
             onClick={() => setFlyoutOpen(!flyoutOpen)}
           >
             <span>{title}</span>
@@ -61,6 +61,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
                       key={path}
                       to={createPath(path)}
                       className='-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150'
+                      activeClassName='text-opacity-75'
                     >
                       <img
                         className='flex-shrink-0 h-6 w-6'
@@ -111,7 +112,8 @@ const MenuItem: React.FC<MenuItemProps> = ({
       return (
         <Link
           to={`/${path}`}
-          className='text-base font-bold tracking-wider uppercase leading-6 text-blue-900 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150'
+          className='text-base font-bold tracking-wider uppercase leading-6 text-blue-900 hover:text-opacity-75 focus:outline-none focus:text-opacity-75 transition ease-in-out duration-150'
+          activeClassName='text-opacity-75'
         >
           {title}
         </Link>
