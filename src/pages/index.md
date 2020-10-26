@@ -28,9 +28,9 @@ intro:
       linkUrl: services/detailing
       text: >
         Whether it is brightwork, extensive paint polishing, or routine daily cleanings, FoxTrot can set a new standard of clean for your aircraft.
-    - image: '/img/icon_Public Sector.svg'
-      heading: Public Sector
-      linkUrl: services/public-sector
+    - image: '/img/icon_Commercial Cleaning.svg'
+      heading: Commercial Cleaning
+      linkUrl: services/commercial-cleaning
       text: >
         Our team’s project management and world class accountability ensures that your contract will be fulfilled exactingly and professionally.
     - image: /img/icon_Facility.svg

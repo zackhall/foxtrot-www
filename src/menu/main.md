@@ -13,10 +13,10 @@ menuItems:
         title: Detailing
         description: Whether it is brightwork, extensive paint polishing, or routine daily cleanings, FoxTrot can set a new standard of clean for your aircraft.
         path: services/detailing
-      - icon: /img/icon_Public Sector.svg
-        title: Public Sector
+      - icon: /img/icon_Commercial Cleaning.svg
+        title: Commercial Cleaning
         description: Our team’s project management and world class accountability ensures that your contract will be fulfilled exactingly and professionally.
-        path: services/public-sector
+        path: services/commercial-cleaning
       - icon: /img/icon_Facility.svg
         title: Facility Care
         description: Manage a small flight department or major FBO network?  FoxTrot can help.  Our world class staff screening procedure guarantees better results.

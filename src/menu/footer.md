@@ -6,6 +6,9 @@ menuItems:
     title: About
     path: page/about
   - type: link
-    title: Contact
+    title: Contact & Locations
     path: contact
+  - type: link
+    title: Safety
+    path: safety
 ---
