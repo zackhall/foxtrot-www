@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import useSiteMetadata from '@components/SiteMetadata'
 
 export const Icon = () => (
@@ -15,11 +14,13 @@ export const Icon = () => (
   </svg>
 )
 
-export const LinkedIn: React.FC<{}> = () => {
+export const LinkedIn: React.FC<{
+  className?
+}> = ({ className }) => {
   const { socialLinks } = useSiteMetadata()
 
   return socialLinks && socialLinks.linkedin ? (
-    <a href={socialLinks.linkedin}>
+    <a href={socialLinks.linkedin} className={className}>
       <Icon />
     </a>
   ) : null

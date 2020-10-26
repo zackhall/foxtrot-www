@@ -3,11 +3,7 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 
 import { createPath } from '@root/utils'
 
-import logo from '@img/logo.svg'
-import facebook from '@img/social/facebook.svg'
-import instagram from '@img/social/instagram.svg'
-import twitter from '@img/social/twitter.svg'
-import vimeo from '@img/social/vimeo.svg'
+import { Instagram, Facebook, LinkedIn } from '@components/socialLinks'
 
 const Footer: React.FC<{}> = () => {
   const data = useStaticQuery(graphql`
@@ -43,22 +39,9 @@ const Footer: React.FC<{}> = () => {
               <Link to={createPath(item.path)}>{item.title}</Link>
             </li>
           ))}
-          {/* <li className='inline-block space-x-4'>
-            <a href=''>
-              <img
-                src='assets/Icon/Instagram.svg'
-                alt=''
-                className='inline-block'
-              />
-            </a>
-            <a href=''>
-              <img
-                src='assets/Icon/Twitter.svg'
-                alt=''
-                className='inline-block'
-              />
-            </a>
-          </li> */}
+          <Instagram className='block md:inline-block ml-2' />
+          <Facebook className='block md:inline-block ml-2' />
+          <LinkedIn className='block md:inline-block ml-2' />
         </ul>
       </div>
     </footer>

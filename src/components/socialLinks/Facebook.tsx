@@ -17,11 +17,13 @@ export const Icon = () => (
   </svg>
 )
 
-export const Facebook: React.FC<{}> = () => {
+export const Facebook: React.FC<{
+  className?
+}> = ({ className }) => {
   const { socialLinks } = useSiteMetadata()
 
   return socialLinks && socialLinks.facebook ? (
-    <a href={socialLinks.facebook}>
+    <a href={socialLinks.facebook} className={className}>
       <Icon />
     </a>
   ) : null
