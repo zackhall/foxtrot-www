@@ -36,12 +36,18 @@ const Footer: React.FC<{}> = () => {
         <ul className='block md:space-x-8 mt-0'>
           {menuItems.map((item) => (
             <li key={item.path} className='block text-center md:inline-block'>
-              <Link to={createPath(item.path)}>{item.title}</Link>
+              <Link
+                to={createPath(item.path)}
+                className='hover:opacity-75'
+                activeClassName='opacity-75'
+              >
+                {item.title}
+              </Link>
             </li>
           ))}
-          <Instagram className='block md:inline-block ml-2' />
-          <Facebook className='block md:inline-block ml-2' />
-          <LinkedIn className='block md:inline-block ml-2' />
+          <Instagram className='block md:inline-block hover:opacity-75' />
+          <Facebook className='block md:inline-block hover:opacity-75' />
+          <LinkedIn className='block md:inline-block hover:opacity-75' />
         </ul>
       </div>
     </footer>
