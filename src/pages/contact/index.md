@@ -12,11 +12,10 @@ testimonialsTag: home
 locations:
   - title: |-
       Headquarters
-      (Canton)
+      (CAK)
     address: |-
-      5440 Fulton Road NW <br/>
-      Suite 201 <br/>
-      Canton, OH 44718
+      5430 Lauby Road <br/>
+      North Canton, OH 44720
 
       *Detailing • Facility Care*
   - title: |-
@@ -79,19 +78,20 @@ locations:
       *__Repair__ • Detailing • Facility Care*
   - title: Dayton (DAY)
     address: |-
-      123 Address TBD <br />
-      City, ST 12345
+      3751 Cargo Road <br />
+      Vandalia, OH 45377
 
       *Detailing • Commercial Cleaning • Facility Care*
   - address: |-
-      123 Address TBD <br />
-      City, ST 12345
+      6170 Miller Store Road <br />
+      Norfolk, VA 23502
 
       *Detailing • Commercial Cleaning • Facility Care*
     title: Norfolk (ORF)
   - address: |-
-      123 Address TBD <br />
-      City, ST 12345
+      2100 GSP Drive <br />
+      Hangar 2 <br />
+      Greer, SC 29651
 
       *Detailing • Commercial Cleaning • Facility Care*
     title: Greenville (GSP)

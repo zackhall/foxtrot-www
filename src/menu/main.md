@@ -15,7 +15,7 @@ menuItems:
         path: services/detailing
       - icon: /img/icon_Commercial Cleaning.svg
         title: Commercial Cleaning
-        description: Our team’s project management and world class accountability ensures that your contract will be fulfilled exactingly and professionally.
+        description: Our team’s attention to detail and world class accountability ensures that your fleet of aircraft will always look great both inside and out.
         path: services/commercial-cleaning
       - icon: /img/icon_Facility.svg
         title: Facility Care
