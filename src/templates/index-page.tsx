@@ -12,11 +12,8 @@ import Plane from '@components/Icons/Plane'
 
 interface IndexPageTemplateProps {
   image: any
-  title: string
   heading: string
   subheading: string
-  mainpitch: any
-  description: string
   intro: {
     blurbs: Array<any>
     heading: string
@@ -45,11 +42,8 @@ interface IndexPageTemplateProps {
 
 export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
   image,
-  title,
   heading,
   subheading,
-  mainpitch,
-  description,
   intro,
   about,
   gallery,
@@ -68,10 +62,10 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
     >
       <div className='w-3/4 lg:w-2/3'>
         <span className='block text-white text-center uppercase min-w-full tracking-wider font-extrabold text-s, md:text-base my-1'>
-          Aviation Service and Refurbishment Experts
+          {subheading}
         </span>
         <h1 className='text-white text-2xl lg:text-4xl xl:text-6xl font-black text-center my-6'>
-          Experience you can trust.
+          {heading}
         </h1>
         {/* Hide the play button until there is a video */}
         {/* <div className='flex flex-row justify-center items-center'>
@@ -172,11 +166,8 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
-        title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
         intro={frontmatter.intro}
         about={frontmatter.about}
         gallery={frontmatter.galleryPreview}
@@ -193,7 +184,6 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
@@ -203,11 +193,6 @@ export const pageQuery = graphql`
         }
         heading
         subheading
-        mainpitch {
-          title
-          description
-        }
-        description
         intro {
           blurbs {
             image {
