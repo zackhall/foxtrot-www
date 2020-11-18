@@ -1,16 +1,15 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
-import Image from 'gatsby-image'
 
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
-import Gallery from '../components/Gallery'
+import Layout from '@components/Layout'
+import Content, { HTMLContent } from '@components/Content'
+import Gallery from '@components/Gallery'
+import PreviewNote from '@components/PreviewNote'
 
 export interface GalleryPageTemplateProps {
   content: React.ReactNode
   contentComponent: Function
-  title: string
 
   heading: string
   subheading: string
@@ -24,18 +23,19 @@ export interface GalleryPageTemplateProps {
     image: any
     alt: string
   }>
+  preview: boolean
 }
 
 export const GalleryPageTemplate: React.FC<GalleryPageTemplateProps> = ({
   content,
   contentComponent,
-  title,
   heading,
   subheading,
   description,
   actionLink,
   featuredimage,
   gallery,
+  preview,
 }) => {
   const PostContent = contentComponent || Content
 
@@ -67,7 +67,13 @@ export const GalleryPageTemplate: React.FC<GalleryPageTemplateProps> = ({
         </section>
       ) : null}
       <section className='container mx-auto px-4 my-24'>
-        <Gallery photos={gallery} />
+        {preview ? (
+          <PreviewNote>
+            Photos not loaded dynamically in preview. Page will show{' '}
+            {gallery.length} photo(s).
+          </PreviewNote>
+        ) : null}
+        {!preview ? <Gallery photos={gallery} /> : null}
       </section>
     </>
   )
@@ -89,6 +95,7 @@ const GalleryPage: React.FC<GalleryPageProps> = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         {...frontmatter}
+        preview={false}
       />
     </Layout>
   )

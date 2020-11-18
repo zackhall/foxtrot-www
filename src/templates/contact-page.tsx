@@ -9,9 +9,11 @@ import Content, { HTMLContent } from '@components/Content'
 import ContactForm from '@components/ContactForm'
 import { formatLinesAsSpan } from '@root/utils'
 import Testimonials from '@components/testimonial/ConnectedCarousel'
+import { safelyGetFrontMatter } from '@cms/cms.util'
+import MDXRenderer from '@components/MDXRenderer'
+import PreviewNote from '@components/PreviewNote'
 
 interface ContactPageTemplateProps {
-  title: string
   image: any
   heading: string
   subheading: string
@@ -23,15 +25,14 @@ interface ContactPageTemplateProps {
     title: string
     address: string
   }>
-  content: string
-  contentComponent?: any
+  preview: boolean
+  children: any[]
 }
 
 export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = (
   props
 ) => {
   const {
-    title,
     image,
     heading,
     subheading,
@@ -40,10 +41,9 @@ export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = (
     formHeader,
     locations,
     testimonialsTag,
-    content,
-    contentComponent,
+    preview,
+    children,
   } = props
-  const PageContent = contentComponent || Content
 
   return (
     <>
@@ -101,16 +101,26 @@ export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = (
         </div>
       </section>
 
-      <PageContent className='content' content={content} />
+      <MDXRenderer>{children}</MDXRenderer>
 
-      {testimonialsTag ? <Testimonials tag={testimonialsTag} /> : null}
+      {!preview && testimonialsTag ? (
+        <Testimonials tag={testimonialsTag} />
+      ) : null}
+
+      {preview && testimonialsTag ? (
+        <PreviewNote>
+          Testimonials not loaded in preview. Page will show testimonials
+          matching tag: {testimonialsTag}
+        </PreviewNote>
+      ) : null}
     </>
   )
 }
 
-const ContactPage = ({ data }) => {
-  const { markdownRemark: post } = data
-  const { frontmatter } = post
+const ContactPage = (props) => {
+  const { pageContext } = props
+  const frontmatter = safelyGetFrontMatter(pageContext)
+  console.log(frontmatter)
 
   return (
     <Layout>
@@ -119,9 +129,7 @@ const ContactPage = ({ data }) => {
         <meta name='description' content={`${frontmatter.subheading}`} />
       </Helmet>
       <ContactPageTemplate
-        contentComponent={HTMLContent}
-        title={frontmatter.title}
-        content={frontmatter.html}
+        {...props}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         image={frontmatter.image}
@@ -130,37 +138,10 @@ const ContactPage = ({ data }) => {
         formHeader={frontmatter.formHeader}
         testimonialsTag={frontmatter.testimonialsTag}
         locations={frontmatter.locations}
+        preview={false}
       />
     </Layout>
   )
 }
 
 export default ContactPage
-
-export const contactPageQuery = graphql`
-  query ContactPage {
-    markdownRemark(frontmatter: { templateKey: { eq: "contact-page" } }) {
-      html
-      frontmatter {
-        title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        heading
-        subheading
-        phone
-        email
-        formHeader
-        testimonialsTag
-        locations {
-          title
-          address
-        }
-      }
-    }
-  }
-`

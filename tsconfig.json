@@ -8,6 +8,7 @@
       "@components/*": ["src/components/*"],
       "@cms/*": ["src/cms/*"],
       "@img/*": ["src/img/*"],
+      "@templates/*": ["src/templates/*"],
       "@root/*": ["src/*"]
     }
   }

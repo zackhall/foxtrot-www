@@ -1,6 +1,5 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { MDXProvider } from '@mdx-js/react'
 
 import Layout from '@components/Layout'
 import { safelyGetFrontMatter } from '@cms/cms.util'
