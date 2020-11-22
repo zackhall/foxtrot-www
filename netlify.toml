@@ -6,3 +6,44 @@
   NODE_VERSION = "12"
   YARN_VERSION = "1.22.4"
   YARN_FLAGS = "--no-ignore-optional"
+
+[[redirects]]
+  from = "/services-1"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/about-us"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/careers"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/aircraft-detailing"
+  to = "/services/detailing"
+  status = 301
+
+[[redirects]]
+  from = "/blank"
+  to = "/services/facility-care"
+  status = 301
+
+[[redirects]]
+  from = "/aircraft-detailing"
+  to = "/services/detailing"
+  status = 301
+
+[[redirects]]
+  from = "/aircraft-detailing"
+  to = "/services/detailing"
+  status = 301
+
