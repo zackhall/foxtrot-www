@@ -10,6 +10,7 @@ module.exports = {
       facebook:
         'https://www.facebook.com/Foxtrot-Aviation-Services-LLC-364482620290021',
     },
+    siteUrl: `https://foxtrotaviation.com`,
   },
   plugins: [
     'gatsby-plugin-sharp',
@@ -137,6 +138,7 @@ module.exports = {
         purgeOnly: ['/all.sass'], // applies purging only on the bulma css file
       },
     }, // must be after other CSS plugins
+    `gatsby-plugin-sitemap`,
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
