@@ -11,3 +11,5 @@ CMS.registerPreviewTemplate('services', ServicePagePreview)
 CMS.registerPreviewTemplate('pages', DefaultPagePreview)
 CMS.registerPreviewTemplate('contact', ContactPagePreview)
 CMS.registerPreviewTemplate('gallery', GalleryPagePreview)
+
+CMS.init()

@@ -201,6 +201,7 @@ collections:
       - file: "src/pages/contact/index.mdx"
         label: "Contact Page"
         name: "contact"
+        format: yaml-frontmatter
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
           - {label: Title, name: title, widget: string}
