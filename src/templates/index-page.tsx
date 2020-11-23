@@ -7,6 +7,7 @@ import Services from '@components/Services'
 import AboutSection from '@components/AboutSection'
 import LargeGallery from '@components/LargeGallery'
 import Testimonials from '@components/testimonial/ConnectedCarousel'
+import TestimonialsPreview from '@components/testimonial/PreviewCarousel'
 import Plane from '@components/Icons/Plane'
 // import Play from '@components/Icons/Play'
 
@@ -38,6 +39,7 @@ interface IndexPageTemplateProps {
     alt: string
   }>
   testimonialsTag: string
+  preview?: boolean
 }
 
 export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
@@ -49,6 +51,7 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
   gallery,
   brands,
   testimonialsTag,
+  preview = false,
 }) => (
   <>
     {/* Banner */}
@@ -99,7 +102,11 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
         {brands.map((brand) => (
           <img
             className='flex-shrink-0 h-8 lg:h-12 m-6'
-            src={brand.image.childImageSharp.fluid.src}
+            src={
+              brand.image && brand.image.childImageSharp
+                ? brand.image.childImageSharp.fluid.src
+                : brand.image
+            }
             alt={brand.alt}
           />
         ))}
@@ -147,7 +154,12 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
     </div>
     {/* End Text well */}
 
-    {testimonialsTag ? <Testimonials tag={testimonialsTag} /> : null}
+    {!preview && testimonialsTag ? (
+      <Testimonials tag={testimonialsTag} />
+    ) : null}
+    {preview && testimonialsTag ? (
+      <TestimonialsPreview tag={testimonialsTag} />
+    ) : null}
   </>
 )
 

@@ -139,104 +139,62 @@ collections:
         label: "Landing Page"
         name: "index"
         fields:
-          - label: "Template Key"
-            name: "templateKey"
-            widget: "hidden"
-            default: "index-page"
-          - label: Image
-            name: image
-            widget: image
-          - label: Heading
-            name: heading
-            widget: string
-          - label: Subheading
-            name: subheading
-            widget: string
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: Testimonials Tag, name: testimonialsTag, widget: string}
           - label: Intro
             name: intro
             widget: object
             fields:
-              - label: Heading
-                name: heading
-                widget: string
-              - label: Subheading
-                name: subheading
-                widget: string
-              - label: Description
-                name: description
-                widget: text
+              - {label: Heading, name: heading, widget: string}
+              - {label: Description, name: description, widget: text}
               - label: Blurbs
                 name: blurbs
                 widget: list
                 fields:
-                  - label: Image
-                    name: image
-                    widget: image
-                  - label: Text
-                    name: text
-                    widget: text
-          - label: About
+                  - {label: Image, name: image, widget: image}
+                  - {label: Text, name: text, widget: text}
+          - label: "About Section"
             name: about
             widget: object
             fields:
-              - label: Heading
-                name: heading
-                widget: string
-              - label: Subheading
-                name: subheading
-                widget: string
-              - label: Image
-                name: image
-                widget: image
               - label: Blurbs
                 name: blurbs
-                widget: object
+                widget: list
                 fields:
-                  - label: Heading
-                    name: heading
-                    widget: string
-                  - label: Text
-                    name: text
-                    widget: string
-                  - label: Icon
-                    name: icon
-                    widget: image
-          - label: "Testimonials Tag"
-            name: testimonialsTag
-            widget: string
+                  - {label: Icon, name: icon, widget: image}
+                  - {label: Heading, name: heading, widget: text}
+                  - {label: Text, name: text, widget: text}
+              - label: Links
+                name: links
+                widget: list
+                fields:
+                  - {label: Text, name: text, widget: text}
+                  - {label: URL, name: url, widget: text}
+                  - {label: Image, name: image, widget: image}
+                  - {label: Heading, name: heading, widget: string}
+                  - {label: Subheading, name: subheading, widget: string}
           - label: "Gallery Preview"
             name: galleryPreview
             widget: object
             fields:
-              - label: Heading
-                name: heading
-                widget: string
-              - label: "Link Text"
-                name: linkText
-                widget: string
-              - label: "Link URL"
-                name: linkUrl
-                widget: string
+              - {label: Heading, name: heading, widget: string}
+              - {label: "Link Text", name: linkText, widget: string}
+              - {label: "Link URL", name: linkUrl, widget: string}
               - label: Items
                 name: items
                 widget: list
                 fields:
-                  - label: Image
-                    name: image
-                    widget: image
-                  - label: Alt
-                    name: alt
-                    widget: string
+                  - {label: Image, name: image, widget: image}
+                  - {label: Alt, name: alt, widget: string}
           - label: Brands
             name: brands
             widget: list
             fields:
-              - label: Image
-                name: image
-                widget: image
-              - label: Alt
-                name: alt
-                widget: string
+              - {label: Image, name: image, widget: image}
+              - {label: Alt, name: alt, widget: string}
 
       - file: "src/pages/gallery.md"
         label: "Gallery Page"

@@ -13,7 +13,14 @@ const Services: React.FC<{
   <div className='bg-orange-200 relative'>
     <div className='container mx-auto px-4 block xl:flex py-12'>
       <div className='w-full xl:w-1/2 xl:pr-12 my-12 flex justify-center items-center'>
-        <img src={image.childImageSharp.fluid.src} alt={heading} />
+        <img
+          src={
+            image && image.childImageSharp
+              ? image.childImageSharp.fluid.src
+              : image
+          }
+          alt={heading}
+        />
       </div>
       <div className='w-full lg:w-2/3 mx-auto xl:w-1/2 xl:mx-0 xl:pl-12 my-12'>
         <span className='block uppercase tracking-wider text-gray-500 text-sm font-bold'>
@@ -25,7 +32,11 @@ const Services: React.FC<{
             <div className='flex-shrink-0 w-6 h-6 pt-2'>
               <img
                 className='w-full'
-                src={blurb.icon.publicURL}
+                src={
+                  blurb.icon && blurb.icon.publicURL
+                    ? blurb.icon.publicURL
+                    : blurb.icon
+                }
                 alt={blurb.heading}
               />
             </div>

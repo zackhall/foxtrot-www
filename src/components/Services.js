@@ -33,7 +33,11 @@ const Services = ({ heading, subheading, description, gridItems }) => (
                   className='flex-shrink-0 h-12 inline-block my-2'
                 >
                   <img
-                    src={item.image.publicURL}
+                    src={
+                      item.image && item.image.publicURL
+                        ? item.image.publicURL
+                        : item.image
+                    }
                     alt={item.heading}
                     className=''
                   />
