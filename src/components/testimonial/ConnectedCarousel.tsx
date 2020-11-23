@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import Carousel from './Carousel'
 
-interface ConnectedCarouselProps {
+export interface ConnectedCarouselProps {
   tag: string
 }
 

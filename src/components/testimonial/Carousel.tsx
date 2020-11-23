@@ -4,7 +4,7 @@ import { CSSTransition } from 'react-transition-group'
 import { ArrowLeft, ArrowRight } from '@components/Icons/Arrows'
 import { formatLinesAsP } from '@root/utils'
 
-interface TestimonialsProps {
+export interface TestimonialsProps {
   testimonials: Array<{
     author: string
     company: string

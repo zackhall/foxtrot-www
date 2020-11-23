@@ -91,6 +91,46 @@ collections:
                     name: path
                     widget: string
 
+  - name: contactPages
+    label: "Contact Pages"
+    format: "frontmatter"
+    files:
+      - file: "src/pages/contact/index.mdx"
+        label: "Contact Page"
+        name: "contact"
+        format: yaml-frontmatter
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: "Form Header", name: formHeader, widget: string}
+          - {label: Email, name: email, widget: string}
+          - {label: Phone, name: phone, widget: string}
+          - {label: Testimonials Tag, name: testimonialsTag, widget: string}
+          - label: Locations
+            name: locations
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Address
+                name: address
+                widget: markdown
+                minimal: true
+
+      - file: "src/pages/contact/thanks.mdx"
+        label: "Contact Thanks"
+        name: "thanks"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Description, name: description, widget: string}
+          - {label: "Featured Image", name: "featuredimage", widget: image}
+          - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "customPages"
     label: "Custom Pages"
     files:
@@ -197,32 +237,6 @@ collections:
               - label: Alt
                 name: alt
                 widget: string
-
-      - file: "src/pages/contact/index.mdx"
-        label: "Contact Page"
-        name: "contact"
-        format: yaml-frontmatter
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, name: subheading, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: "Form Header", name: formHeader, widget: string}
-          - {label: Email, name: email, widget: string}
-          - {label: Phone, name: phone, widget: string}
-          - {label: Testimonials Tag, name: testimonialsTag, widget: string}
-          - label: Locations
-            name: locations
-            widget: list
-            fields:
-              - label: Title
-                name: title
-                widget: string
-              - label: Address
-                name: address
-                widget: markdown
-                minimal: true
 
       - file: "src/pages/gallery.md"
         label: "Gallery Page"

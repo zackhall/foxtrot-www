@@ -10,6 +10,7 @@ CMS.registerPreviewTemplate('index', IndexPagePreview)
 CMS.registerPreviewTemplate('services', ServicePagePreview)
 CMS.registerPreviewTemplate('pages', DefaultPagePreview)
 CMS.registerPreviewTemplate('contact', ContactPagePreview)
+CMS.registerPreviewTemplate('thanks', DefaultPagePreview)
 CMS.registerPreviewTemplate('gallery', GalleryPagePreview)
 
 CMS.init()

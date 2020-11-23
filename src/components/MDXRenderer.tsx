@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight } from '@components/Icons/Arrows'
 import Anchor from '@components/Anchor'
 import FilmStrip from '@components/FilmStrip'
 import Testimonials from '@components/testimonial/ConnectedCarousel'
+import TestimonialsPreview from '@components/testimonial/PreviewCarousel'
 import { FeatureTable, FeatureTableColumn } from '@components/FeatureTable'
 import StyledList from '@components/StyledList'
 
@@ -17,6 +18,11 @@ export const MDX_COMPONENTS = {
   FilmStrip,
   Testimonials,
   ul: StyledList,
+}
+
+export const PREVIEW_MDX_COMPONENTS = {
+  ...MDX_COMPONENTS,
+  Testimonials: TestimonialsPreview,
 }
 
 const MDXRenderer = ({ children }) => (
