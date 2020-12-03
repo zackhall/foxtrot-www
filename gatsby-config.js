@@ -13,6 +13,14 @@ module.exports = {
     siteUrl: `https://foxtrotaviation.com`,
   },
   plugins: [
+    {
+      // Make sure this plugin is first in the array of plugins
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-Z861E883M1",
+        head: true,
+      },
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
