@@ -15,7 +15,7 @@ module.exports = {
   plugins: [
     {
       // Make sure this plugin is first in the array of plugins
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-gtag`,
       options: {
         trackingId: "G-Z861E883M1",
         head: true,
