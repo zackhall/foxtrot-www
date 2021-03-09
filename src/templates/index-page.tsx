@@ -207,11 +207,6 @@ export const pageQuery = graphql`
         intro {
           blurbs {
             image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
               publicURL
             }
             text
