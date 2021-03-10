@@ -11,7 +11,7 @@ backend:
 media_folder: static/img
 public_folder: /img
 display_url: https://foxtrotaviation.com
-logo_url: https://foxtrotaviation.com/img/logo.svg
+logo_url: https://foxtrotaviation.com/img/foxtrot-fox.png
 
 collections:
   - name: "services"
