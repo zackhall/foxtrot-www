@@ -1,7 +1,7 @@
 {
-  "name": "foxtrot",
+  "name": "foxtrot-www",
   "description": "Foxtrot Aviation's Gatsby Website",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "author": "Zack Hall",
   "dependencies": {
     "@mdx-js/mdx": "^1.6.16",
