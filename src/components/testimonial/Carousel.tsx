@@ -38,7 +38,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
           <div className='text-xl'>{formatLinesAsP(t.quote)}</div>
           <div className='flex my-6'>
             <img
-              src={t.avatar.childImageSharp.fluid.src}
+              src={t.avatar?.childImageSharp?.fixed?.src}
               alt={t.author}
               className='mr-6'
             />

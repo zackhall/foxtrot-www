@@ -26,11 +26,7 @@ const LargeGallery: React.FC<LargeGalleryProps> = ({
         <div
           className='w-full h-full bg-cover'
           style={{
-            backgroundImage: `url(${
-              !!items[0].image.childImageSharp
-                ? items[0].image.childImageSharp.fluid.src
-                : items[0].image
-            })`,
+            backgroundImage: `url(${ items[0]?.image?.childImageSharp?.fixed?.src })`,
           }}
         ></div>
       </div>
@@ -38,11 +34,7 @@ const LargeGallery: React.FC<LargeGalleryProps> = ({
         <div
           className='w-full h-full bg-cover'
           style={{
-            backgroundImage: `url(${
-              !!items[1].image.childImageSharp
-                ? items[1].image.childImageSharp.fluid.src
-                : items[1].image
-            })`,
+            backgroundImage: `url(${ items[1]?.image?.childImageSharp?.fixed?.src })`,
           }}
         ></div>
       </div>
@@ -50,21 +42,13 @@ const LargeGallery: React.FC<LargeGalleryProps> = ({
     <div
       className='hidden md:block md:w-5/12 lg:w-4/12 mr-6 bg-cover h-full'
       style={{
-        backgroundImage: `url(${
-          !!items[2].image.childImageSharp
-            ? items[2].image.childImageSharp.fluid.src
-            : items[2].image
-        })`,
+        backgroundImage: `url(${ items[2]?.image?.childImageSharp?.fixed?.src })`,
       }}
     ></div>
     <div
       className='w-full md:w-7/12 lg:w-5/12 bg-cover h-full relative'
       style={{
-        backgroundImage: `url(${
-          !!items[3].image.childImageSharp
-            ? items[3].image.childImageSharp.fluid.src
-            : items[3].image
-        })`,
+        backgroundImage: `url(${ items[3]?.image?.childImageSharp?.fixed?.src })`,
       }}
     >
       <div

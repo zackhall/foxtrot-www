@@ -98,7 +98,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-relative-images`,
             options: {
-              name: 'uploads',
+              // name: 'uploads',
+              staticFolderName: 'static',
             },
           },
         ],
@@ -136,6 +137,32 @@ module.exports = {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
+        // customizeWebpackConfig: (config) => {
+        //   config.resolve = {
+        //     ...(config.resolve || {}),
+        //     fallback: {
+        //       ...(config.resolve.fallback || {}),
+        //       path: false,
+        //     },
+        //   };
+        // },
+        // customizeWebpackConfig: config => {
+        //   config.resolve = {
+        //     fallback: {
+        //       path: false,
+        //     }
+        //   };
+        // },
+        customizeWebpackConfig: (config) => {
+          config.resolve = {
+            ...(config.resolve || {}),
+            fallback: {
+              ...(config.resolve.fallback || {}),
+              fs: false,
+              path: require.resolve('path-browserify'),
+            },
+          };
+        },
       },
     },
     `gatsby-plugin-sitemap`,

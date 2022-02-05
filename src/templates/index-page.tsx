@@ -8,7 +8,6 @@ import LargeGallery from '@components/LargeGallery'
 import Testimonials from '@components/testimonial/ConnectedCarousel'
 import TestimonialsPreview from '@components/testimonial/PreviewCarousel'
 import Plane from '@components/Icons/Plane'
-// import Play from '@components/Icons/Play'
 
 interface IndexPageTemplateProps {
   image: any
@@ -58,7 +57,7 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
       className='flex bg-cover bg-center p-12 py-24 lg:py-48 xl:py-56 justify-center'
       style={{
         backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+            image?.childImageSharp?.fixed?.src || "blank"
         })`,
       }}
     >
@@ -101,11 +100,7 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
         {brands.map((brand) => (
           <img
             className='flex-shrink-0 h-8 lg:h-12 m-6'
-            src={
-              brand.image && brand.image.childImageSharp
-                ? brand.image.childImageSharp.fluid.src
-                : brand.image
-            }
+            src={ brand?.image?.childImageSharp?.fixed?.src || "unknown" }
             alt={brand.alt}
           />
         ))}
@@ -191,81 +186,80 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
 
 export default IndexPage
 
-export const pageQuery = graphql`
-  query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-      frontmatter {
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+export const pageQuery = graphql`query IndexPageTemplate {
+  markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
+    frontmatter {
+      image {
+        childImageSharp {
+          fixed(width: 2000){
+            src
           }
+        }
+      }
+      heading
+      subheading
+      intro {
+        blurbs {
+          image {
+            publicURL
+          }
+          text
+          heading
+          linkUrl
         }
         heading
         subheading
-        intro {
-          blurbs {
-            image {
-              publicURL
-            }
-            text
-            heading
-            linkUrl
+        description
+      }
+      about {
+        blurbs {
+          icon {
+            publicURL
           }
           heading
-          subheading
-          description
+          text
         }
-        about {
-          blurbs {
-            icon {
-              publicURL
+        links {
+          text
+          url
+        }
+        heading
+        subheading
+        image {
+          childImageSharp {
+            fixed(width: 650, quality: 80) {
+              src
             }
-            heading
-            text
           }
-          links {
-            text
-            url
-          }
-          heading
-          subheading
+        }
+      }
+      galleryPreview {
+        items {
           image {
             childImageSharp {
-              fluid(maxWidth: 650, quality: 80) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-        galleryPreview {
-          items {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 650, quality: 80) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            alt
-          }
-          heading
-          linkText
-          linkUrl
-        }
-        testimonialsTag
-        brands {
-          image {
-            childImageSharp {
-              fluid(maxWidth: 250, quality: 80) {
-                ...GatsbyImageSharpFluid
+              fixed(width: 650, quality: 80) {
+                src
               }
             }
           }
           alt
         }
+        heading
+        linkText
+        linkUrl
+      }
+      testimonialsTag
+      brands {
+        image {
+          childImageSharp {
+            fixed(width: 250, quality: 80) {
+              src
+            }
+          }
+        }
+        alt
       }
     }
   }
+}
 `
