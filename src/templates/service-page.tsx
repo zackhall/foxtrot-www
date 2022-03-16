@@ -28,7 +28,7 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
 }) => {
   return (
     <>
-      {helmet || ''}
+      { helmet }
       <Header imageUrl={image} title={title} />
       <section className='bg-orange-200 py-12'>
         <div className='container-sm mx-auto px-4 text-center'>

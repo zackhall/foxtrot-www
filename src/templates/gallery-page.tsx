@@ -129,7 +129,7 @@ export const pageQuery = graphql`
                 ...GatsbyImageSharpFluid
               }
               fixed (width: 750) {
-								width
+                width
                 height
               }
             }

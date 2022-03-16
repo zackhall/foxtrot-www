@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 import Layout from '@components/Layout'
 import Services from '@components/Services'
@@ -8,6 +9,7 @@ import LargeGallery from '@components/LargeGallery'
 import Testimonials from '@components/testimonial/ConnectedCarousel'
 import TestimonialsPreview from '@components/testimonial/PreviewCarousel'
 import Plane from '@components/Icons/Plane'
+import Hero from '@components/Hero'
 
 interface IndexPageTemplateProps {
   image: any
@@ -52,15 +54,7 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
   preview = false,
 }) => (
   <>
-    {/* Banner */}
-    <div
-      className='flex bg-cover bg-center p-12 py-24 lg:py-48 xl:py-56 justify-center'
-      style={{
-        backgroundImage: `url(${
-            image?.childImageSharp?.fixed?.src || "blank"
-        })`,
-      }}
-    >
+    <Hero image={getImage(image)}>
       <div className='w-3/4 lg:w-2/3'>
         <span className='block text-white text-center uppercase min-w-full tracking-wider font-extrabold text-s, md:text-base my-1'>
           {subheading}
@@ -76,8 +70,7 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
           </a>
         </div> */}
       </div>
-    </div>
-    {/* End Banner */}
+    </Hero>
 
     {/* Brand Stripe */}
     <div className='bg-orange-200 relative'>
@@ -97,13 +90,13 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
         <span className='block w-full md:w-auto text-center mx-6 uppercase font-bold tracking-wider text-sm'>
           Trusted in the industry
         </span>
-        {brands.map((brand) => (
-          <img
-            className='flex-shrink-0 h-8 lg:h-12 m-6'
-            src={ brand?.image?.childImageSharp?.fixed?.src || "unknown" }
+        {brands.map((brand) =>
+          <GatsbyImage
+            className='flex-shrink-0  m-6'
+            image={getImage(brand.image)}
             alt={brand.alt}
           />
-        ))}
+        )}
       </div>
     </div>
     {/* End Brand Stripe */}
@@ -191,9 +184,13 @@ export const pageQuery = graphql`query IndexPageTemplate {
     frontmatter {
       image {
         childImageSharp {
-          fixed(width: 2000){
-            src
-          }
+          gatsbyImageData(
+            width: 1440
+            aspectRatio: 3
+            placeholder: BLURRED
+            layout: FULL_WIDTH
+            formats: [AUTO, WEBP, AVIF]
+          )
         }
       }
       heading
@@ -227,7 +224,7 @@ export const pageQuery = graphql`query IndexPageTemplate {
         subheading
         image {
           childImageSharp {
-            fixed(width: 650, quality: 80) {
+            fixed(width: 650) {
               src
             }
           }
@@ -237,7 +234,7 @@ export const pageQuery = graphql`query IndexPageTemplate {
         items {
           image {
             childImageSharp {
-              fixed(width: 650, quality: 80) {
+              fixed(width: 650) {
                 src
               }
             }
@@ -252,9 +249,13 @@ export const pageQuery = graphql`query IndexPageTemplate {
       brands {
         image {
           childImageSharp {
-            fixed(width: 250, quality: 80) {
-              src
-            }
+            gatsbyImageData(
+              height: 48
+              quality: 80
+              placeholder: BLURRED
+              layout: CONSTRAINED
+              formats: [AUTO, WEBP, AVIF]
+            )
           }
         }
         alt
