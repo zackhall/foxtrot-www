@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import MDX from 'mdx-scoped-runtime'
+import ReactMarkdown from 'react-markdown'
 
 import Layout from '@components/Layout'
 import ContactForm from '@components/ContactForm'
@@ -92,12 +92,11 @@ export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = (
           locations.map((loc) => (
             <div key={loc.title}>
               <h4>{formatLinesAsSpan(loc.title)}</h4>
-              <MDX>{loc.address}</MDX>
+              <ReactMarkdown>{loc.address}</ReactMarkdown>
             </div>
           ))}
       </div>
     </section>
-
     <MDXRenderer>{children}</MDXRenderer>
 
     {!preview && testimonialsTag ? (

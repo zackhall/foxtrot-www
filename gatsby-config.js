@@ -137,23 +137,10 @@ module.exports = {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
-        // customizeWebpackConfig: (config) => {
-        //   config.resolve = {
-        //     ...(config.resolve || {}),
-        //     fallback: {
-        //       ...(config.resolve.fallback || {}),
-        //       path: false,
-        //     },
-        //   };
-        // },
-        // customizeWebpackConfig: config => {
-        //   config.resolve = {
-        //     fallback: {
-        //       path: false,
-        //     }
-        //   };
-        // },
-        customizeWebpackConfig: (config) => {
+        customizeWebpackConfig: (config, { plugins }) => {
+          config.plugins.push(
+            plugins.provide({ process: 'process/browser' })
+          );
           config.resolve = {
             ...(config.resolve || {}),
             fallback: {
