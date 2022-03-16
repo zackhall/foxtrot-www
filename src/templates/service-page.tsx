@@ -50,7 +50,6 @@ interface ServicePageProps {
 const ServicePage: React.FC<ServicePageProps> = (props) => {
   const { pageContext } = props
   const frontmatter = safelyGetFrontMatter(pageContext)
-  console.log({ props, pageContext })
 
   return (
     <Layout>

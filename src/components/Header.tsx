@@ -4,7 +4,7 @@ import React from 'react';
 export interface HeaderProps {
   imageUrl?: string;
   title?: string;
-  fullWidthHeader: boolean
+  fullWidthHeader?: boolean
 }
 
 export const Header: React.FC<HeaderProps> = ({
