@@ -34,7 +34,12 @@ const ConnectedCarousel: React.FC<ConnectedCarouselProps> = ({ tag }) => {
     (t) => t.tags && t.tags.includes(tag)
   )
 
-  return <Carousel testimonials={testimonials} />
+  return (
+    <div className="w-full-breakout">
+      <Carousel testimonials={testimonials} />
+    </div>
+  );
+
 }
 
 export default ConnectedCarousel
