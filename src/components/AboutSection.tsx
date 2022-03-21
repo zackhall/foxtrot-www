@@ -14,11 +14,7 @@ const Services: React.FC<{
     <div className='container mx-auto px-4 block xl:flex py-12'>
       <div className='w-full xl:w-1/2 xl:pr-12 my-12 flex justify-center items-center'>
         <img
-          src={
-            image && image.childImageSharp
-              ? image.childImageSharp.fluid.src
-              : image
-          }
+          src={ image?.childImageSharp?.fixed?.src || image }
           alt={heading}
         />
       </div>

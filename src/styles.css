@@ -188,7 +188,7 @@ p img {
 }
 @screen lg {
   .container-sm {
-    max-width: 720px;
+    max-width: 800px;
   }
 }
 

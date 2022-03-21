@@ -1,15 +1,16 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
+import Header from '@components/Header'
 import Layout from '@components/Layout'
 import { safelyGetFrontMatter } from '@cms/cms.util'
 import MDXRenderer from '@components/MDXRenderer'
 
 export interface DefaultPageTemplateProps {
   title: string
-  description: string
   helmet: any
   image?: any
+  fullWidthHeader?: boolean
   children: any[]
 }
 
@@ -17,18 +18,13 @@ export const DefaultPageTemplate: React.FC<DefaultPageTemplateProps> = ({
   title,
   helmet,
   image,
+  fullWidthHeader,
   children,
 }) => {
   return (
     <>
       {helmet || ''}
-      {image ? (
-        <header className='my-12'>
-          <div className='container mx-auto px-4'>
-            <img className='w-full' src={image} />
-          </div>
-        </header>
-      ) : null}
+      <Header imageUrl={image} title={title} fullWidthHeader={fullWidthHeader} />
       <section className='container-sm mx-auto px-4 mt-12 mb-24'>
         <MDXRenderer>{children}</MDXRenderer>
       </section>
@@ -57,6 +53,7 @@ const DefaultPage: React.FC<DefaultPageProps> = (props) => {
         }
         title={frontmatter.title}
         image={frontmatter.featuredimage}
+        fullWidthHeader={frontmatter.fullWidthHeader}
       />
     </Layout>
   )

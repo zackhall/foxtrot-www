@@ -26,8 +26,8 @@ const Gallery: React.FC<GalleryProps> = ({ photos }) => {
   const galleryPhotos = photos.map((photo) => ({
     src: photo.image.childImageSharp.fluid.src,
     alt: photo.alt,
-    width: photo.image.childImageSharp.resolutions.width,
-    height: photo.image.childImageSharp.resolutions.height,
+    width: photo.image.childImageSharp.fixed.width,
+    height: photo.image.childImageSharp.fixed.height,
   }))
 
   return (
