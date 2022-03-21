@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 import MDXRenderer from '@components/MDXRenderer'
 import Layout from '@components/Layout'
 import Anchor from '@components/Anchor'
+import Header from '@components/Header'
 import { safelyGetFrontMatter } from '@cms/cms.util'
 
 export interface ServicePageTemplateProps {
@@ -27,15 +28,8 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
 }) => {
   return (
     <>
-      {helmet || ''}
-      <header
-        className='header-sm flex bg-cover bg-center justify-center items-center'
-        style={{
-          backgroundImage: `url(${image})`,
-        }}
-      >
-        <h1 className='px-4 text-white text-center'>{title}</h1>
-      </header>
+      { helmet }
+      <Header imageUrl={image} title={title} />
       <section className='bg-orange-200 py-12'>
         <div className='container-sm mx-auto px-4 text-center'>
           <p className='my-4'>{intro.text}</p>
@@ -56,7 +50,6 @@ interface ServicePageProps {
 const ServicePage: React.FC<ServicePageProps> = (props) => {
   const { pageContext } = props
   const frontmatter = safelyGetFrontMatter(pageContext)
-  console.log({ props, pageContext })
 
   return (
     <Layout>

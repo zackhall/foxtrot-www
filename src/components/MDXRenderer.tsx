@@ -4,9 +4,11 @@ import { MDXProvider } from '@mdx-js/react'
 import { ArrowLeft, ArrowRight } from '@components/Icons/Arrows'
 import Anchor from '@components/Anchor'
 import FilmStrip from '@components/FilmStrip'
+import Header from '@components/Header'
 import Testimonials from '@components/testimonial/ConnectedCarousel'
 import TestimonialsPreview from '@components/testimonial/PreviewCarousel'
 import { FeatureTable, FeatureTableColumn } from '@components/FeatureTable'
+import Spacer from '@components/Spacer'
 import StyledList from '@components/StyledList'
 
 export const MDX_COMPONENTS = {
@@ -16,6 +18,8 @@ export const MDX_COMPONENTS = {
   FeatureTable,
   FeatureTableColumn,
   FilmStrip,
+  Header,
+  Spacer,
   Testimonials,
   ul: StyledList,
 }

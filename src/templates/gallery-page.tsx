@@ -1,5 +1,4 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 
 import Layout from '@components/Layout'
@@ -129,7 +128,7 @@ export const pageQuery = graphql`
               fluid(maxWidth: 750, quality: 72) {
                 ...GatsbyImageSharpFluid
               }
-              resolutions {
+              fixed (width: 750) {
                 width
                 height
               }
