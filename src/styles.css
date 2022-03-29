@@ -13,6 +13,10 @@ html {
   @apply text-navy-500;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1 {
   @apply text-5xl font-black my-6;
 }
