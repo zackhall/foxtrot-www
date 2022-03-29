@@ -20,4 +20,24 @@ testimonials:
     avatar: /img/icon_Avatar.png
     tags:
       - home
+  - author: Victor S.
+    company: Charlotte
+    quote: >-
+      	After working as an Assistant Crew Chief for 5 months, I have proven
+        management that I have the skills and dedication for an opening as a Crew Chief in Charlotte, North Carolina. I
+        was offered the position and I enjoy each day I come into work, knowing that I have goals to meet (budget,
+        client’s satisfaction, and employees) on daily, weekly, and monthly basis.
+    avatar: 
+    tags:
+      - careers
+  - author: Victoria R.
+    company: Columbus
+    quote: >-
+      While managing our Columbus location I hold positions on the Safety
+      Committee and Training Committee which allows me to share my experiences with new employees and travel to our various locations to help
+      new Crew Chiefs feel comfortable in their new role.  I plan to continue to grow with FoxTrot as we work towards our mission to be
+      the best aircraft detailing company in the United States.
+    avatar: 
+    tags:
+      - careers
 ---

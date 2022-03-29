@@ -37,11 +37,14 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
         <li className='testimonial block w-full md:w-2/3 flex-none mx-auto px-4 md:px-0'>
           <div className='text-xl'>{formatLinesAsP(t.quote)}</div>
           <div className='flex my-6'>
-            <img
-              src={t.avatar?.childImageSharp?.fixed?.src}
-              alt={t.author}
-              className='mr-6'
-            />
+            {
+              t.avatar &&
+              <img
+                src={t.avatar?.childImageSharp?.fixed?.src}
+                alt={t.author}
+                className='mr-6'
+              />
+            }
             <div>
               <span className='block font-bold'>{t.author}</span>
               <span className='block text-sm'>{t.company}</span>
