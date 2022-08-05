@@ -5,11 +5,6 @@ heading: Experience you can trust
 subheading: Aviation Service and Refurbishment Experts
 intro:
   blurbs:
-    - image: /img/icon_Repair.svg
-      heading: Repair Station
-      linkUrl: services/repair
-      text: >
-        Located in Las Vegas, Nevada, our team of experts bring expert craftsmanship, fanatical attention to detail, and fast turn around times to your operation.
     - image: /img/icon_Detail.svg
       heading: Detailing
       linkUrl: services/detailing
@@ -28,13 +23,13 @@ intro:
   heading: What we offer
   subheading: Our Services
   description: >
-    Since 2010, FoxTrot has offered customers the most responsive services and best results in the aviation industry.  While still providing detailing that is second to none, FoxTrot is now a repair station capable of making the dreams for your aircraft’s interior refurbishment a reality.  Our team also offers on-airport janitorial services, and contract line service support.
+    Since 2010, FoxTrot has offered customers the most responsive services and best results in the aviation industry.  Our team also offers on-airport janitorial services, and contract line service support.
 about:
   blurbs:
     - icon: /img/icon_Eye.svg
       heading: Proven Results
       text: >
-        From Long Island, to Nashville, to Las Vegas, FoxTrot has found innovative solutions for demanding customers.  No matter what your current options are, FoxTrot is always worth a look.
+        Across the United States, FoxTrot has found innovative solutions for demanding customers.  No matter what your current options are, FoxTrot is always worth a look.
     - icon: /img/icon_Man.svg
       heading: Expert Technicians
       text: >

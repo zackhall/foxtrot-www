@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Foxtrot Aviation Services',
     description:
-      'Since 2010, FoxTrot has offered customers the most responsive services and best results in the aviation industry.  While still providing detailing that is second to none, FoxTrot is now a repair station capable of making the dreams for your aircraft’s interior refurbishment a reality.  Our team also offers on-airport janitorial services, and contract line service support.',
+      'Since 2010, FoxTrot has offered customers the most responsive services and best results in the aviation industry.  Our team also offers on-airport janitorial services, and contract line service support.',
     socialLinks: {
       instagram: 'https://www.instagram.com/foxtrotaviationservices/',
       linkedin:

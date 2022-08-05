@@ -5,10 +5,6 @@ menuItems:
   - type: dropdown
     title: Services
     dropdownItems:
-      - icon: /img/icon_Repair.svg
-        title: Repair Station
-        description: Located in Las Vegas, Nevada, our team of experts bring expert craftsmanship, fanatical attention to detail, and fast turn around times to your operation.
-        path: services/repair
       - icon: /img/icon_Detail.svg
         title: Detailing
         description: Whether it is brightwork, extensive paint polishing, or routine daily cleanings, FoxTrot can set a new standard of clean for your aircraft.

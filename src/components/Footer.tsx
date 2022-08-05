@@ -31,7 +31,7 @@ const Footer: React.FC<{}> = () => {
     <footer className='bg-navy-500'>
       <div className='container p-6 mx-auto block md:flex justify-between text-white'>
         <span className='block m-2 text-center'>
-          © 2020 Foxtrot Aviation Services (Repair Station FT2R835D)
+          © 2020 Foxtrot Aviation Services
         </span>
         <ul className='block md:space-x-8 mt-0'>
           {menuItems.map((item) => (
