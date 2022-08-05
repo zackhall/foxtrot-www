@@ -2,7 +2,7 @@
 templateKey: index-page
 image: /img/homepage-bg.png
 heading: Experience you can trust
-subheading: Aviation Service and Refurbishment Experts
+subheading: Aviation Fleet and Facility Appearance Experts
 intro:
   blurbs:
     - image: /img/icon_Detail.svg
